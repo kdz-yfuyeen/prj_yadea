@@ -224,7 +224,7 @@ localStorage.setItem("tongtien", tongTien);
                 </tr>
             </table>
             <div>
-            <a href="http://127.0.0.1:5500/frontend/tt.html">
+            <a href="tt.html">
             <button id="btn_tt">Thanh toán</button>
             </a>  
         </div>
