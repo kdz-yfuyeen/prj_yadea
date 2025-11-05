@@ -1,687 +1,314 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <title>Nhà máy sản xuất xe máy điện, xe đạp điện | YADEA Việt Nam</title>
-    <link rel="stylesheet" href="./style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-  </head>
-  <body class="bg-gray-100">
-    <div class="bg-black p-2 flex text-left space-x-5 justify-end px-10">
-      <a class="text-white font-medium hover:text-[#ff5f00]" href="#"
-        >CÔNG NGHỆ</a
-      >
-      <a class="text-white font-medium hover:text-[#ff5f00]" href="#"
-        >HỖ TRỢ & BẢO HÀNH</a
-      >
-      <a class="text-white font-medium hover:text-[#ff5f00]" href="#"
-        >TIN TỨC</a
-      >
-      <a class="text-white font-medium hover:text-[#ff5f00]" href="#"
-        >CƠ HỘI HỢP TÁC</a
-      >
-    </div>
 
-    <div class="bg-gray-300 flex justify-around p-2">
-      <img
-        class=""
-        src="https://www.yadea.com.vn/wp-content/uploads/2023/09/logo-yadea.svg"
-        alt=""
-      />
-      <div class="flex text-left space-x-10 my-2">
-        <div>
-          <div id="btn_xmd" class="flex">
-            <p class="font-medium hover:text-[#ff5f00]">XE MÁY ĐIỆN</p>
-            <svg
-              class="my-1 icon1"
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-chevron-down-icon lucide-chevron-down"
-            >
-              <path d="m6 9 6 6 6-6" />
-            </svg>
-          </div>
-          <div id="menu_xmd" class="absolute left-0 right-0 bg-white shadow-lg">
-            <div class="flex">
-              <div>
-              <h3 class="font-bold text-lg mb-4 p-2 text-orange-500">
-                Các dòng sản phẩm
-              </h3>
-              <div class="flex justify-between">
-                <div id="btn_spm" class=" flex justify-between items-center px-5 h-10 w-70  hover:text-white hover:border-[#ff5f00] hover:border-1 hover:bg-[#ff5f00] hover:rounded-lg">
-                <h3
-                  class=""
-                >
-                  Sản phẩm mới
-                </h3>
-                <svg
-                  class="m-1 "
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="17"
-                  height="17"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="lucide lucide-chevron-right-icon lucide-chevron-right"
-                >
-                  <path d="m9 18 6-6-6-6" />
-                </svg>
-                
-              </div>
-               
-              </div>
-              <div id="btn_city" class="flex items-center px-5 h-10 w-70 justify-between hover:text-white hover:border-[#ff5f00] hover:border-1 hover:bg-[#ff5f00] hover:rounded-lg">
-                <h3
-                  class=""
-                >
-                  Dòng City
-                </h3>
-                <svg
-                  class="m-1 "
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="17"
-                  height="17"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="lucide lucide-chevron-right-icon lucide-chevron-right"
-                >
-                  <path d="m9 18 6-6-6-6" />
-                </svg>
-              </div>
-              <div id="btn_sport" class="flex items-center px-5 h-10 w-70 justify-between hover:text-white hover:border-[#ff5f00] hover:border-1 hover:bg-[#ff5f00] hover:rounded-lg">
-                <h3
-                  class=""
-                >
-                  Dòng Sport 
-                </h3>
-                <svg
-                  class="m-1 "
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="17"
-                  height="17"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="lucide lucide-chevron-right-icon lucide-chevron-right"
-                >
-                  <path d="m9 18 6-6-6-6" />
-                </svg>
-              </div>
-              <div id="btn_soobin" class="flex items-center px-5 h-10 w-70 justify-between hover:text-white hover:border-[#ff5f00] hover:border-1 hover:bg-[#ff5f00] hover:rounded-lg">
-                <h3
-                  class=""
-                >
-                  YADEA X SOOBIN 
-                </h3>
-                <svg
-                  class="m-1 "
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="17"
-                  height="17"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="lucide lucide-chevron-right-icon lucide-chevron-right"
-                >
-                  <path d="m9 18 6-6-6-6" />
-                </svg>
-              </div>
-            </div>
-               <div id="spm" class="grid grid-cols-4 gap-10 p-4 hidden ">
-       <a href="http://127.0.0.1:5500/frontend/product.html">
-         <div class="text-center">
-          <img
-            src="https://www.yadea.com.vn/wp-content/uploads/2025/05/Velax-Anh-nho-ben-tren-480x390.png"
-            alt="Voltguard"
-            class="mx-auto w-50 h-50 transition-transform duration-300 hover:scale-105"
-          />
-          <p class="font-medium mt-2">YADEA Voltguard U</p>
-          <p class="text-gray-400">Tiến bước không ngừng</p>
-        </div>
-       </a>
-        <div class="text-center">
-          <img
-            src="https://www.yadea.com.vn/wp-content/uploads/2025/01/V002-U-anh-chinh-1-480x361.png"
-            alt="Velax"
-            class="mx-auto w-50 h-50 transition-transform duration-300 hover:scale-105"
-          />
-          <p class="font-medium mt-2">YADEA Velax</p>
-          <p class="text-gray-400">Thông minh vượt trội</p>
-        </div>
-        <div class="text-center">
-          <img
-            src="https://www.yadea.com.vn/wp-content/uploads/2024/06/Orla-P-45-co-bong-480x389.png"
-            alt="Orla P"
-            class="mx-auto w-50 h-50 transition-transform duration-300 hover:scale-105"
-          />
-          <p class="font-medium mt-2">YADEA Orla P</p>
-          <p class="text-gray-400">Tỏa sáng vượt thời gian</p>
-        </div>
-        <div class="text-center">
-          <img
-            src="https://www.yadea.com.vn/wp-content/uploads/2023/11/1807-chinh-anh-sang-oris-xanh-45-480x360.png"
-            alt="Oris"
-            class="mx-auto w-50 h-50 transition-transform duration-300 hover:scale-105"
-          />
-          <p class="font-medium mt-2">YADEA Oris</p>
-          <p class="text-gray-400">Lái Oris đón đầu thử thách</p>
-        </div>
-      </div>
-                     <div id="city" class="grid grid-cols-4 gap-10 p-4 hidden ">
-        <div class="text-center">
-          <img
-            src="https://www.yadea.com.vn/wp-content/uploads/2025/01/Anh-V002P-chinh-480x389.png"
-            alt="Voltguard"
-            class="mx-auto w-50 h-50 transition-transform duration-300 hover:scale-105"
-          />
-          <p class="font-medium mt-2">YADEA Voltguard U</p>
-          <p class="text-gray-400">Xe điện máy tính năng vượt trội</p>
-        </div>
-        <div class="text-center">
-          <img
-            src="https://www.yadea.com.vn/wp-content/uploads/2023/11/ocean-cyan-002-480x389.png"
-            alt="Velax"
-            class="mx-auto w-50 h-50 transition-transform duration-300 hover:scale-105"
-          />
-          <p class="font-medium mt-2">YADEA Ocean</p>
-        </div>
-        <div class="text-center">
-          <img
-            src="https://www.yadea.com.vn/wp-content/uploads/2023/11/icute-1-480x422.png"
-            alt="Orla P"
-            class="mx-auto w-50 h-50 transition-transform duration-300 hover:scale-105"
-          />
-          <p class="font-medium mt-2">YADEA iCute</p>
-        </div>
-        <div class="text-center">
-          <img
-            src="https://www.yadea.com.vn/wp-content/uploads/2023/11/odoras-white-1-480x389.png"
-            alt="Oris"
-            class="mx-auto w-50 h-50 transition-transform duration-300 hover:scale-105"
-          />
-          <p class="font-medium mt-2">YADEA ODORA S</p>
-        </div>
-      </div>
-               <div id="sport" class="grid grid-cols-4 gap-10 p-4 hidden ">
-        <div class="text-center">
-          <img
-            src="https://www.yadea.com.vn/wp-content/uploads/2025/03/2-anh-cung-kich-thuoc-Vekoo-2-480x390.png"
-            alt="Voltguard"
-            class="mx-auto w-50 h-50 transition-transform duration-300 hover:scale-105"
-          />
-          <p class="font-medium mt-2">YADEA Vekko</p>
-        </div>
-        <div class="text-center">
-          <img
-            src="https://www.yadea.com.vn/wp-content/uploads/2024/09/xzone-cheo-xam-480x389.webp"
-            alt="Velax"
-            class="mx-auto w-50 h-50 transition-transform duration-300 hover:scale-105"
-          />
-          <p class="font-medium mt-2">YADEA X-Zone</p>
-        </div>
-        <div class="text-center">
-          <img
-            src="https://www.yadea.com.vn/wp-content/uploads/2023/11/xmen-1-480x390.png"
-            alt="Orla P"
-            class="mx-auto w-50 h-50 transition-transform duration-300 hover:scale-105"
-          />
-          <p class="font-medium mt-2">YADEA Xmen Neo</p>
-        </div>
-        <div class="text-center">
-          <img
-            src="https://www.yadea.com.vn/wp-content/uploads/2025/02/2-anh-cung-kich-thuoc-XSKy-1-480x390.png"
-            alt="Oris"
-            class="mx-auto w-50 h-50 transition-transform duration-300 hover:scale-105"
-          />
-          <p class="font-medium mt-2">YADEA X-Sky</p>
-        </div>
-      </div>
-      <div id="soobin" class="grid grid-cols-4 gap-10 p-4 hidden  ">
-        <div class="text-center">
-          <img
-            src="https://www.yadea.com.vn/wp-content/uploads/2025/05/Vekoo-Anh-nho-ben-tren-480x390.png"
-            alt="Voltguard"
-            class="mx-auto w-50 h-50 transition-transform duration-300 hover:scale-105"
-          />
-          <p class="font-medium mt-2">YADEA VEKOO X SOOBIN</p>
-        </div>
-        <div class="text-center">
-          <img
-            src="https://www.yadea.com.vn/wp-content/uploads/2025/05/Sb-Velax-Anh-nho-ben-tren-480x390.png"
-            alt="Velax"
-            class="mx-auto w-50 h-50 transition-transform duration-300 hover:scale-105"
-          />
-          <p class="font-medium mt-2">YADEA VELAX X SOOBIN</p>
-        </div>
-        <div class="text-center">
-          <img
-            src="https://www.yadea.com.vn/wp-content/uploads/2025/05/Sb-Oris-Anh-nho-ben-tren-480x390.png"
-            alt="Orla P"
-            class="mx-auto w-50 h-50 transition-transform duration-300 hover:scale-105"
-          />
-          <p class="font-medium mt-2">YADEA ORIS X SOOBIN</p>
-        </div>
-      </div>
-    </div>
-            </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>Nhà máy sản xuất xe máy điện, xe đạp điện | YADEA Việt Nam</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
 
-          </div>
-          <div>
-            <div id="btn_xgmd" class="flex">
-          <p class="font-medium hover:text-[#ff5f00]">XE GẮN MÁY ĐIỆN</p>
-          <svg
-            class="my-1 icon1"
-            xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="20"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-chevron-down-icon lucide-chevron-down"
-          >
-            <path d="m6 9 6 6 6-6" />
+<body class="bg-gray-100">
+  <div class="bg-black p-2 flex text-left space-x-5 justify-end px-10">
+    <a class="text-white font-medium hover:text-[#ff5f00]" href="#">CÔNG NGHỆ</a>
+    <a class="text-white font-medium hover:text-[#ff5f00]" href="#">HỖ TRỢ & BẢO HÀNH</a>
+    <a class="text-white font-medium hover:text-[#ff5f00]" href="#">TIN TỨC</a>
+    <a class="text-white font-medium hover:text-[#ff5f00]" href="#">CƠ HỘI HỢP TÁC</a>
+  </div>
+
+  <div class="bg-gray-300 flex justify-around p-2 relative">
+    <a href="index.html"><img class="" src="https://www.yadea.com.vn/wp-content/uploads/2023/09/logo-yadea.svg"
+        alt="" /></a>
+
+    <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold text-black">
+      <div class="group">
+        <a href="#" class="flex items-center gap-1 hover:text-orange-500 mx-2">
+          XE MÁY ĐIỆN
+          <svg xmlns="http://www.w3.org/2000/svg"
+            class="w-4 h-4 transition-transform duration-200 group-hover:rotate-180" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
           </svg>
-        </div>
-            <div id="menu_xgmd" class="absolute left-0 right-0 bg-white shadow-lg">
-            <div class="flex">
-              <div>
-              <h3 class="font-bold text-lg mb-4 p-2 text-orange-500">
-                Các dòng sản phẩm
+        </a>
+
+        <div
+          class="absolute left-0 top-full w-screen bg-white border-t shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+          <div class="max-w-7xl mx-auto flex py-6">
+            <div class="w-1/5 p-6">
+              <h3 class="text-[#FF5800] font-bold mb-4 uppercase text-[16px]">
+                CÁC DÒNG SẢN PHẨM
               </h3>
-              <div class="flex justify-between">
-                <div id="btn_spm2" class=" flex justify-between items-center px-5 h-10 w-70  hover:text-white hover:border-[#ff5f00] hover:border-1 hover:bg-[#ff5f00] hover:rounded-lg">
-                <h3
-                  class=""
-                >
-                  Sản phẩm mới
-                </h3>
-                <svg
-                  class="m-1 "
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="17"
-                  height="17"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="lucide lucide-chevron-right-icon lucide-chevron-right"
-                >
-                  <path d="m9 18 6-6-6-6" />
-                </svg>
-                
+
+              <div
+                class="menu-item text-gray-700 px-4 py-3 cursor-pointer flex justify-between items-center hover:bg-orange-500 hover:text-white"
+                data-line="newProduct1">
+                Sản phẩm mới
               </div>
-               
+
+              <div
+                class="menu-item text-gray-700 px-4 py-3 cursor-pointer flex justify-between items-center hover:bg-orange-500 hover:text-white"
+                data-line="city">
+                Dòng City
               </div>
-              <div id="btn_tl" class="flex items-center px-5 h-10 w-70 justify-between hover:text-white hover:border-[#ff5f00] hover:border-1 hover:bg-[#ff5f00] hover:rounded-lg">
-                <h3
-                  class=""
-                >
-                  Dòng Trợ Lực
-                </h3>
-                <svg
-                  class="m-1 "
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="17"
-                  height="17"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="lucide lucide-chevron-right-icon lucide-chevron-right"
-                >
-                  <path d="m9 18 6-6-6-6" />
-                </svg>
+
+              <div
+                class="menu-item text-gray-700 px-4 py-3 cursor-pointer flex justify-between items-center hover:bg-orange-500 hover:text-white"
+                data-line="sport">
+                Dòng Sport
+              </div>
+
+              <div
+                class="menu-item text-gray-700 px-4 py-3 cursor-pointer flex justify-between items-center hover:bg-orange-500 hover:text-white"
+                data-line="soobin">
+                YADEA x SOOBIN
               </div>
             </div>
-               <div id="spm2" class="grid grid-cols-4 gap-10 p-4 hidden ">
-        <div class="text-center">
-          <img
-            src="https://www.yadea.com.vn/wp-content/uploads/2025/05/Velax-Anh-nho-ben-tren-480x390.png"
-            alt="Voltguard"
-            class="mx-auto w-50 h-50 transition-transform duration-300 hover:scale-105"
-          />
-          <p class="font-medium mt-2">YADEA i8 VINTAGE</p>
-          <p class="text-gray-400">Xe điện thế hệ mới</p>
-        </div>
-        <div class="text-center">
-          <img
-            src="https://www.yadea.com.vn/wp-content/uploads/2025/03/Anrh-nho-ben-tren-480x361-i8-gau-xanh-sua-480x361.png"
-            alt="Velax"
-            class="mx-auto w-50 h-50 transition-transform duration-300 hover:scale-105"
-          />
-          <p class="font-medium mt-2">YADEA i8</p>
-        </div>
-        <div class="text-center">
-          <img
-            src="https://www.yadea.com.vn/wp-content/uploads/2023/11/Anh-nho-ben-tren-480x361-1-480x361.png"
-            alt="Orla P"
-            class="mx-auto w-50 h-50 transition-transform duration-300 hover:scale-105"
-          />
-          <p class="font-medium mt-2">YADEA iFUN</p>
-          <p class="text-gray-400">Khởi đầu hành trình vui vẻ </p>
-        </div>
-        <div class="text-center">
-          <img
-            src="https://www.yadea.com.vn/wp-content/uploads/2023/11/1807-chinh-anh-sang-oris-xanh-45-480x360.png"
-            alt="Oris"
-            class="mx-auto w-50 h-50 transition-transform duration-300 hover:scale-105"
-          />
-          <p class="font-medium mt-2">YADEA I6</p>
-        </div>
-      </div>
-                     <div id="tl" class="grid grid-cols-4 gap-10 p-4 hidden ">
-        <div class="text-center">
-          <img
-            src="https://www.yadea.com.vn/wp-content/uploads/2025/09/avt-yadea-vito.png"
-            alt="Voltguard"
-            class="mx-auto w-50 h-50 transition-transform duration-300 hover:scale-105"
-          />
-          <p class="font-medium mt-2">YADEA VITO</p>
-          <p class="text-gray-400">Xe đạp trợ lực điện thể thao đô thị</p>
-        </div>
-        <div class="text-center">
-          <img
-            src="https://www.yadea.com.vn/wp-content/uploads/2025/09/avt-yadea-flit.png"
-            alt="Velax"
-            class="mx-auto w-50 h-50 transition-transform duration-300 hover:scale-105"
-          />
-          <p class="font-medium mt-2">YADEA FLIT</p>
-          <p>Xe đạp điện trợ lực gấp gọn tiện lợi</p>
-        </div>
-      </div>
-               
-    </div>
-            </div>
+
+            <div id="product-container"
+              class="w-4/5 grid grid-cols-4 gap-6 pl-12 pt-6 pb-6 border-l border-orange-500/50"></div>
           </div>
-        <p class="font-medium hover:text-[#ff5f00]">VỀ YADEA</p>
-        <p class="font-medium hover:text-[#ff5f00]">CỬA HÀNG</p>
-         <div>
+        </div>
+      </div>
+
+      <div class="group">
+        <a href="#" class="flex items-center gap-1 hover:text-orange-500 mx-2">
+          XE GẮN MÁY ĐIỆN
+          <svg xmlns="http://www.w3.org/2000/svg"
+            class="w-4 h-4 transition-transform duration-200 group-hover:rotate-180" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </a>
+
+        <div
+          class="absolute left-0 top-full w-screen bg-white border-t shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+          <div class="max-w-7xl mx-auto flex py-6">
+            <div class="w-1/5 p-6">
+              <h3 class="text-[#FF5800] font-bold mb-4 uppercase text-[16px]">
+                CÁC DÒNG SẢN PHẨM
+              </h3>
+
+              <div
+                class="menu-item text-gray-700 px-4 py-3 cursor-pointer flex justify-between items-center hover:bg-orange-500 hover:text-white"
+                data-line="newProduct2">
+                Sản phẩm mới
+              </div>
+
+              <div
+                class="menu-item text-gray-700 px-4 py-3 cursor-pointer flex justify-between items-center hover:bg-orange-500 hover:text-white"
+                data-line="troLuc">
+                Dòng Trợ Lực
+              </div>
+            </div>
+
+            <div id="product-container-2"
+              class="w-4/5 grid grid-cols-4 gap-6 pl-12 pt-6 pb-6 border-l border-orange-500/50"></div>
+          </div>
+        </div>
+      </div>
+
+      <a href="aboutYadea.html" class="hover:text-orange-500 mx-2">VỀ YADEA</a>
+      <a href="store.html" class="hover:text-orange-500 mx-2">CỬA HÀNG</a>
+
+      <div>
         <div id="btnMenu">
-          <svg
-            class="text-[#ff5f00] hover:bg-[#ff5f00] hover:text-white pb-1"
-            xmlns="http://www.w3.org/2000/svg"
-            width="35"
-            height="35"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-shopping-bag-icon lucide-shopping-bag"
-          >
+          <svg class="text-[#ff5f00] hover:bg-[#ff5f00] hover:text-white pb-1" xmlns="http://www.w3.org/2000/svg"
+            width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-bag-icon lucide-shopping-bag">
             <path d="M16 10a4 4 0 0 1-8 0" />
             <path d="M3.103 6.034h17.794" />
             <path
-              d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"
-            />
+              d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z" />
           </svg>
         </div>
-        <div
-          id="dropdownMenu"
-          class="absolute origin-top-right bg-gray-200 m-1 shadow-lg hidden"
-        >
-          <a
-            class="block py-1 hover:bg-gray-400"
-            href="https://shopee.vn/yadea2023?uls_trackid=543nr4gv003s&utm_campaign=id_KYf5PLXIRo&utm_content=----&utm_medium=affiliates&utm_source=an_17342940115&utm_term=dwnrw2y9fg1m"
-          >
-            <img
-              class="w-8"
-              src="img/1656180674shopee-logo-transparent.png"
-              alt=""
-            />
+        <div id="dropdownMenu" class="absolute origin-top-right bg-gray-200 m-1 shadow-lg hidden">
+          <a class="block py-1 hover:bg-gray-400"
+            href="https://shopee.vn/yadea2023?uls_trackid=544604jq002j&utm_campaign=id_KYf5PLXIRo&utm_content=----&utm_medium=affiliates&utm_source=an_17342940115&utm_term=dwy1ivs2weyd">
+            <img class="w-8" src="1656180674shopee-logo-transparent.png" alt="" />
           </a>
-          <a
-            class="block py-1 hover:bg-gray-400"
-            href="https://www.lazada.vn/shop/yadea-electric-motorcycle?path=index.htm&inWeexShop=true&lang=vi&channelSource=defaultChannel&dsource=share&laz_share_info=2058979970_0_200_210160014081_2058981970_store-profile&laz_token=d6f3dff1b333c39dea814265ec206b64&dsource=share&laz_share_info=2058993702_1_9300_210160014081_2058995702_copy-linktool-campaign-default&laz_token=3a8495988e90957c6a4c4c0c0764d7c7&trafficFrom=17449020_303586&laz_trackid=2:mm_253341341_228653010_2186953010:clkgikqsm1j95eg3e78p6j&mkttid=clkgikqsm1j95eg3e78p6j&exlaz=c_lzd_byr:mm_253341341_228653010_2186953010!vn1296001:clkgikqsm1j95eg3e78p6j::"
-          >
-            <img class="w-8" src="img/1685525042lazada-app-logo.png" alt="" />
+          <a class="block py-1 hover:bg-gray-400"
+            href="https://www.lazada.vn/shop/yadea-electric-motorcycle?path=index.htm&inWeexShop=true&lang=vi&channelSource=defaultChannel&dsource=share&laz_share_info=2058979970_0_200_210160014081_2058981970_store-profile&laz_token=d6f3dff1b333c39dea814265ec206b64&dsource=share&laz_share_info=2058993702_1_9300_210160014081_2058995702_copy-linktool-campaign-default&laz_token=3a8495988e90957c6a4c4c0c0764d7c7&trafficFrom=17449020_303586&laz_trackid=2:mm_253341341_228653010_2186953010:clkgikqsm1j95eg3e78p6j&mkttid=clkgikqsm1j95eg3e78p6j&exlaz=c_lzd_byr:mm_253341341_228653010_2186953010!vn1296001:clkgikqsm1j95eg3e78p6j::">
+            <img class="w-8" src="1685525042lazada-app-logo.png" alt="" />
           </a>
         </div>
       </div>
 
       <div id="btn_muciuthich">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart"><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          class="lucide lucide-heart-icon lucide-heart">
+          <path
+            d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" />
+        </svg>
       </div>
 
-        </div>
-        
+    </nav>
+  </div>
+
+  <div onclick="openPopup()" class="fixed bottom-6 right-6 z-50">
+    <div class="group flex items-center bg-[#ff5f00] text-white font-semibold rounded-full p-3
+        transition-all duration-500 border-3 border-orange-200 overflow-hidden cursor-pointer hover:pr-6">
+      <span class="max-w-0 group-hover:max-w-[180px] overflow-hidden transition-all duration-500
+          whitespace-nowrap mr-0 group-hover:mr-3">
+        ĐĂNG KÝ LÁI THỬ
+      </span>
+
+      <div class="flex items-center justify-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" class="text-white">
+          <path d="m18 14-1-3" />
+          <path d="m3 9 6 2a2 2 0 0 1 2-2h2a2 2 0 0 1 1.99 1.81" />
+          <path d="M8 17h3a1 1 0 0 0 1-1 6 6 0 0 1 6-6 1 1 0 0 0 1-1v-.75A5 5 0 0 0 17 5" />
+          <circle cx="19" cy="17" r="3" />
+          <circle cx="5" cy="17" r="3" />
+        </svg>
       </div>
-     
     </div>
-    <div
-      class="fixed bottom-5 right-5 z-50 group cursor-pointer"
-      onclick="openPopup()"
-    >
-      <div class="flex items-center">
-        <span
-          class="opacity-0 group-hover:opacity-100 group-hover:translate-x-0 -translate-x-5 transition-all bg-orange-500 text-white px-4 py-2 rounded-full font-semibold"
-          >ĐĂNG KÝ LÁI THỬ</span
-        >
-        <div
-          class="w-14 h-14 bg-orange-500 rounded-full flex items-center justify-center shadow-lg"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-motorbike-icon lucide-motorbike"
-          >
-            <path d="m18 14-1-3" />
-            <path d="m3 9 6 2a2 2 0 0 1 2-2h2a2 2 0 0 1 1.99 1.81" />
-            <path
-              d="M8 17h3a1 1 0 0 0 1-1 6 6 0 0 1 6-6 1 1 0 0 0 1-1v-.75A5 5 0 0 0 17 5"
-            />
-            <circle cx="19" cy="17" r="3" />
-            <circle cx="5" cy="17" r="3" />
-          </svg>
+  </div>
+
+  <div>
+    <div class="m-2">
+      <h1 class="font-bold text-3xl">HỆ THỐNG SHOWROOM YADEA</h1>
+      <p>Được thành lập vào năm 2001, với hơn 23 năm kinh nghiệm trong ngành, YADEA tự hào là thương hiệu đứng số 1 toàn
+        cầu về doanh số bán hàng trong 8 năm liên tiếp, chuyên phân phối các sản phẩm xe máy điện, xe đạp điện, scooter.
+      </p>
+      <div class=" my-3">
+        <select class="border border-gray-300 rounded p-2">
+          <option>Chọn Tỉnh / Thành Phố</option>
+          <option>Hà Nội</option>
+          <option>TP. Hồ Chí Minh</option>
+          <option>Đà Nẵng</option>
+          <option>Cần Thơ</option>
+        </select>
+        <select class="border border-gray-300 rounded w-70 p-2 mb-4 ">
+          <option>Chọn cửa hàng</option>
+          <option>YADEA Nguyễn Văn Cừ</option>
+          <option>YADEA Phạm Văn Đồng</option>
+          <option>YADEA CMT8</option>
+        </select>
+      </div>
+      <p>Với mạng lưới cửa hàng trên toàn quốc, showroom YADEA không chỉ mang đến cho bạn những mẫu xe điện hiện đại,
+        thời thượng, mà còn cung cấp dịch vụ tư vấn tận tình từ đội ngũ nhân viên chuyên nghiệp. Hãy đến ngay showroom
+        gần nhất để khám phá và chọn lựa chiếc xe điện phù hợp nhất cho mình!</p>
+      <p class="font-bold text-2xl m-5">Hình ảnh nhận diện cửa hàng </p>
+      <div class="flex flex-col justify-center mx-30">
+        <div class="flex space-x-10">
+          <img class="w-90 h-70"
+            src="https://www.yadea.com.vn/wp-content/uploads/2024/08/AnyConv.com__e620c6f7-b51a-433f-9f23-49252d2921fe.webp"
+            alt="">
+          <img class="w-90 h-70"
+            src="https://www.yadea.com.vn/wp-content/uploads/2024/08/AnyConv.com__67b66b0f-d9aa-4a6e-afde-422cd500c243.webp"
+            alt="">
+          <img class="w-90 h-70"
+            src="https://www.yadea.com.vn/wp-content/uploads/2024/08/AnyConv.com__0a38ca8c-e217-4c44-b7c9-08e86a0e4865.webp"
+            alt="">
+        </div>
+        <div class="flex space-x-10">
+          <img class="w-90 h-70"
+            src="https://www.yadea.com.vn/wp-content/uploads/2024/08/AnyConv.com__4d7037e5-eb80-4397-819c-14f61618c496.webp"
+            alt="">
+          <img class="w-90 h-70"
+            src="https://www.yadea.com.vn/wp-content/uploads/2024/08/AnyConv.com__edcf9d3d-eec6-4359-9579-ddeede9e6049.webp"
+            alt="">
+          <img class="w-90 h-70"
+            src="https://www.yadea.com.vn/wp-content/uploads/2024/08/AnyConv.com__b24476c0-f1c3-489e-b5cf-65ab22b9da79.webp"
+            alt="">
         </div>
       </div>
     </div>
 
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./jscript.js"></script>
+  <script src="db.js"></script>
+  <script src="header.js"></script>
+</body>
+<footer class="bg-black text-white p-4">
+  <div class="flex">
+    <div class="w-140 mx-2">
+      <img src="https://www.yadea.com.vn/wp-content/uploads/2023/09/logo-yadea.svg" alt="" />
+      <h1 class="text-[#ff5f00] font-bold">
+        CÔNG TY TNHH ELETRIC MOTORCYCLE YADEA VIỆT NAM
+      </h1>
+      <p>
+        Mã số thuế: 2400866767 do Sở KHĐT Tỉnh Bắc Giang cấp lần đầu ngày
+        27/06/2019 và các lần thay đổi tiếp theo.
+      </p>
+      <p>
+        Địa Chỉ:Lô O1-2, O1-3, O1-5, O1-6, O1-7 Khu công nghiệp Quang Châu,
+        Phường Nếnh, Tỉnh Bắc Ninh, Việt Nam.
+      </p>
+    </div>
+    <div class="flex flex-col w-70">
+      <h1 class="text-[#ff5f00] font-bold">SẢN PHẨM MỚI</h1>
+      <a class="hover:text-[#ff5f00]" href="#">YADEA Vekoo</a>
+      <a class="hover:text-[#ff5f00]" href="#">YADEA Velax</a>
+      <a class="hover:text-[#ff5f00]" href="#">YADEA Oris</a>
+      <a class="hover:text-[#ff5f00]" href="#">YADEA Voltguard</a>
+      <a class="hover:text-[#ff5f00]" href="#">YADEA Ossy</a>
+    </div>
+    <div class="flex flex-col w-70">
+      <h1 class="text-[#ff5f00] font-bold">VỀ CHÚNG TÔI</h1>
+      <a class="hover:text-[#ff5f00]" href="">Về YADEA</a>
+      <a class="hover:text-[#ff5f00]" href="">Cửa hàng</a>
+      <a class="hover:text-[#ff5f00]" href="">Công nghệ</a>
+      <a class="hover:text-[#ff5f00]" href="">Tin tức</a>
+      <a class="hover:text-[#ff5f00]" href="">Tuyển dụng</a>
+    </div>
+    <div class="flex flex-col w-70">
+      <h1 class="text-[#ff5f00] font-bold">HỖ TRỢ</h1>
+      <a class="hover:text-[#ff5f00]" href="">Hỗ Trợ & Bảo Hành</a>
+      <a class="hover:text-[#ff5f00]" href="http://127.0.0.1:5500/frontend/baoduongxe.html">Cửa hàng bảo dưỡng</a>
+      <a class="hover:text-[#ff5f00]" href="">Phương Thức Thanh Toán</a>
+      <a class="hover:text-[#ff5f00]" href="">Phướng Thức Vận Chuyển</a>
+      <a class="hover:text-[#ff5f00]" href="">Chính Sách Đổi Trả</a>
+      <a class="hover:text-[#ff5f00]" href="">Chính sách Bảo Mật</a>
+      <a class="hover:text-[#ff5f00]" href="">Cơ hội Hợp Tác</a>
+      <a class="hover:text-[#ff5f00]" href="">Liên Hệ</a>
+    </div>
     <div>
-        <div class="m-2">
-            <h1 class="font-bold text-3xl">HỆ THỐNG SHOWROOM YADEA</h1>
-            <p>Được thành lập vào năm 2001, với hơn 23 năm kinh nghiệm trong ngành, YADEA tự hào là thương hiệu đứng số 1 toàn cầu về doanh số bán hàng trong  8 năm liên tiếp, chuyên phân phối các sản phẩm xe máy điện, xe đạp điện, scooter.</p>
-            <div class=" my-3">
-                <select class="border border-gray-300 rounded p-2">
-        <option>Chọn Tỉnh / Thành Phố</option>
-        <option>Hà Nội</option>
-        <option>TP. Hồ Chí Minh</option>
-        <option>Đà Nẵng</option>
-        <option>Cần Thơ</option>
-      </select>
-                <select class="border border-gray-300 rounded w-70 p-2 mb-4 ">
-      <option>Chọn cửa hàng</option>
-      <option>YADEA Nguyễn Văn Cừ</option>
-      <option>YADEA Phạm Văn Đồng</option>
-      <option>YADEA CMT8</option>
-    </select>
-            </div>
-            <p>Với mạng lưới cửa hàng trên toàn quốc, showroom YADEA không chỉ mang đến cho bạn những mẫu xe điện hiện đại, thời thượng, mà còn cung cấp dịch vụ tư vấn tận tình từ đội ngũ nhân viên chuyên nghiệp. Hãy đến ngay showroom gần nhất để khám phá và chọn lựa chiếc xe điện phù hợp nhất cho mình!</p>
-            <p class="font-bold text-2xl m-5">Hình ảnh nhận diện cửa hàng </p>
-            <div class="flex flex-col justify-center mx-30">
-                <div class="flex space-x-10">
-                    <img class="w-90 h-70" src="https://www.yadea.com.vn/wp-content/uploads/2024/08/AnyConv.com__e620c6f7-b51a-433f-9f23-49252d2921fe.webp" alt="">
-                    <img class="w-90 h-70" src="https://www.yadea.com.vn/wp-content/uploads/2024/08/AnyConv.com__67b66b0f-d9aa-4a6e-afde-422cd500c243.webp" alt="">
-                    <img class="w-90 h-70" src="https://www.yadea.com.vn/wp-content/uploads/2024/08/AnyConv.com__0a38ca8c-e217-4c44-b7c9-08e86a0e4865.webp" alt="">
-                </div>
-                <div class="flex space-x-10">
-                    <img class="w-90 h-70"  src="https://www.yadea.com.vn/wp-content/uploads/2024/08/AnyConv.com__4d7037e5-eb80-4397-819c-14f61618c496.webp" alt="">
-                    <img class="w-90 h-70" src="https://www.yadea.com.vn/wp-content/uploads/2024/08/AnyConv.com__edcf9d3d-eec6-4359-9579-ddeede9e6049.webp" alt="">
-                    <img class="w-90 h-70" src="https://www.yadea.com.vn/wp-content/uploads/2024/08/AnyConv.com__b24476c0-f1c3-489e-b5cf-65ab22b9da79.webp" alt="">
-                </div>
-            </div>
-        </div>
-
+      <h1 class="text-[#ff5f00] font-bold">THEO DÕI YADEA</h1>
+      <div class="flex space-x-2">
+        <a class="hover:text-[#ff5f00]" href="https://www.facebook.com/yadeabrand/">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-facebook-icon lucide-facebook">
+            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+          </svg>
+        </a>
+        <a class="hover:text-[#ff5f00]" href="https://www.instagram.com/yadea.vietnam/">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-instagram-icon lucide-instagram">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+            <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+          </svg>
+        </a>
+        <a class="hover:text-[#ff5f00]" href="https://www.youtube.com/channel/UCwNqzgb1QFon3ZP2jbI71Tg">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-youtube-icon lucide-youtube">
+            <path
+              d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17" />
+            <path d="m10 15 5-3-5-3z" />
+          </svg>
+        </a>
+      </div>
+      <h1>THÔNG TIN LIÊN HỆ</h1>
+      <p>CSKH: 1900636803</p>
+      <p>Liên Hệ Hợp Tác: (+84) 204 6299 288</p>
+      <p>Email: market@yadea.com.vn</p>
+      <img src="" alt="" />
     </div>
+  </div>
+  <p class="text-gray-400">
+    © 2025 – Bản quyền thuộc về Công ty TNHH Electric Motorcycle Yadea Việt
+    Nam.
+  </p>
+</footer>
 
-   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="./jscript.js"></script>
-    <script src="db.js"></script>
-  </body>
-  <footer class="bg-black text-white p-4">
-    <div class="flex">
-      <div class="w-140 mx-2">
-        <img
-          src="https://www.yadea.com.vn/wp-content/uploads/2023/09/logo-yadea.svg"
-          alt=""
-        />
-        <h1 class="text-[#ff5f00] font-bold">
-          CÔNG TY TNHH ELETRIC MOTORCYCLE YADEA VIỆT NAM
-        </h1>
-        <p>
-          Mã số thuế: 2400866767 do Sở KHĐT Tỉnh Bắc Giang cấp lần đầu ngày
-          27/06/2019 và các lần thay đổi tiếp theo.
-        </p>
-        <p>
-          Địa Chỉ:Lô O1-2, O1-3, O1-5, O1-6, O1-7 Khu công nghiệp Quang Châu,
-          Phường Nếnh, Tỉnh Bắc Ninh, Việt Nam.
-        </p>
-      </div>
-      <div class="flex flex-col w-70">
-        <h1 class="text-[#ff5f00] font-bold">SẢN PHẨM MỚI</h1>
-        <a class="hover:text-[#ff5f00]" href="#">YADEA Vekoo</a>
-        <a class="hover:text-[#ff5f00]" href="#">YADEA Velax</a>
-        <a class="hover:text-[#ff5f00]" href="#">YADEA Oris</a>
-        <a class="hover:text-[#ff5f00]" href="#">YADEA Voltguard</a>
-        <a class="hover:text-[#ff5f00]" href="#">YADEA Ossy</a>
-      </div>
-      <div class="flex flex-col w-70">
-        <h1 class="text-[#ff5f00] font-bold">VỀ CHÚNG TÔI</h1>
-        <a class="hover:text-[#ff5f00]" href="">Về YADEA</a>
-        <a class="hover:text-[#ff5f00]" href="">Cửa hàng</a>
-        <a class="hover:text-[#ff5f00]" href="">Công nghệ</a>
-        <a class="hover:text-[#ff5f00]" href="">Tin tức</a>
-        <a class="hover:text-[#ff5f00]" href="">Tuyển dụng</a>
-      </div>
-      <div class="flex flex-col w-70">
-        <h1 class="text-[#ff5f00] font-bold">HỖ TRỢ</h1>
-        <a class="hover:text-[#ff5f00]" href="">Hỗ Trợ & Bảo Hành</a>
-        <a class="hover:text-[#ff5f00]" href="http://127.0.0.1:5500/frontend/baoduongxe.html">Cửa hàng bảo dưỡng</a>
-        <a class="hover:text-[#ff5f00]" href="">Phương Thức Thanh Toán</a>
-        <a class="hover:text-[#ff5f00]" href="">Phướng Thức Vận Chuyển</a>
-        <a class="hover:text-[#ff5f00]" href="">Chính Sách Đổi Trả</a>
-        <a class="hover:text-[#ff5f00]" href="">Chính sách Bảo Mật</a>
-        <a class="hover:text-[#ff5f00]" href="">Cơ hội Hợp Tác</a>
-        <a class="hover:text-[#ff5f00]" href="">Liên Hệ</a>
-      </div>
-      <div>
-        <h1 class="text-[#ff5f00] font-bold">THEO DÕI YADEA</h1>
-        <div class="flex space-x-2">
-          <a
-            class="hover:text-[#ff5f00]"
-            href="https://www.facebook.com/yadeabrand/"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-facebook-icon lucide-facebook"
-            >
-              <path
-                d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
-              />
-            </svg>
-          </a>
-          <a
-            class="hover:text-[#ff5f00]"
-            href="https://www.instagram.com/yadea.vietnam/"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-instagram-icon lucide-instagram"
-            >
-              <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
-              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-              <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
-            </svg>
-          </a>
-          <a
-            class="hover:text-[#ff5f00]"
-            href="https://www.youtube.com/channel/UCwNqzgb1QFon3ZP2jbI71Tg"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-youtube-icon lucide-youtube"
-            >
-              <path
-                d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"
-              />
-              <path d="m10 15 5-3-5-3z" />
-            </svg>
-          </a>
-        </div>
-        <h1>THÔNG TIN LIÊN HỆ</h1>
-        <p>CSKH: 1900636803</p>
-        <p>Liên Hệ Hợp Tác: (+84) 204 6299 288</p>
-        <p>Email: market@yadea.com.vn</p>
-        <img src="" alt="" />
-      </div>
-    </div>
-    <p class="text-gray-400">
-      © 2025 – Bản quyền thuộc về Công ty TNHH Electric Motorcycle Yadea Việt
-      Nam.
-    </p>
-  </footer>
 </html>

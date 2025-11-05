@@ -76,7 +76,6 @@ const dba = [
 const container = document.getElementById("productsList");
 const pagination = document.getElementById("pagination");
 
-
 dba.forEach((p) => {
   const item = `
       <div class="w-full border-1 rounded-md overflow-hidden hover:shadow-lg transition hover:content-[]">
@@ -90,16 +89,14 @@ dba.forEach((p) => {
         <div class="text-center pb-3">
           <p class="font-medium mt-2">${p.name}</p>
           <p class="font-semibold">${p.price.toLocaleString()}₫</p>
-          <input class="px-3" type="checkbox" id="buy${p.id}" name="buy${p.id}"></div>
+          <input class="px-3" type="checkbox" id="buy${p.id}" name="buy${
+    p.id
+  }"></div>
         </div>
       </div>
     `;
   container.insertAdjacentHTML("beforeend", item);
 });
-
-
-
-
 
 const itemsPerPage = 8; // số sản phẩm mỗi trang
 let currentPage = 1; // trang hiện tại
@@ -138,7 +135,7 @@ function applyFilters() {
 }
 
 function renderProducts(page) {
-  container.innerHTML = ""; 
+  container.innerHTML = "";
 
   const start = (page - 1) * itemsPerPage;
   const end = start + itemsPerPage;
@@ -157,7 +154,9 @@ function renderProducts(page) {
         <div class="text-center pb-3">
           <p class="font-medium mt-2">${p.name}</p>
           <p class="font-semibold">${p.price.toLocaleString()}₫</p>
-        <input class="px-3" type="checkbox" id="buy${p.id}" name="buy${p.id}"></div>
+        <input class="px-3" type="checkbox" id="buy${p.id}" name="buy${
+      p.id
+    }"></div>
         </div>
       </div>
     `;
@@ -167,51 +166,47 @@ function renderProducts(page) {
 
 function update() {
   renderProducts(currentPage);
-  renderPagination();
 }
 
 const btn_muciuthich = document.getElementById("btn_muciuthich");
 
-document.getElementById("btn_muciuthich").onclick = function (){
+document.getElementById("btn_muciuthich").onclick = function () {
+  let chitiet = "";
+  let tongTien = 0; // biến để cộng dồn tổng tiền
 
-    let chitiet= "";
-    let tongTien = 0; // biến để cộng dồn tổng tiền
+  dba.forEach((g) => {
+    const checkbox = document.getElementById(`buy${g.id}`);
 
-    dba.forEach( g => {
-        const checkbox = document.getElementById(`buy${g.id}`);
+    const buy = checkbox.checked;
 
-        const buy = checkbox.checked;
-
-        if (buy){
-            tongTien += g.price; // cộng dồn giá từng xe
-            chitiet +=`
+    if (buy) {
+      tongTien += g.price; // cộng dồn giá từng xe
+      chitiet += `
                 <tr>
                     <td>${g.name}</td>
                     <td>${g.price.toLocaleString()}đ</td>
                 </tr>
             `;
-            
-        }
-    });
-
-    if(chitiet===""){
-        alert("vui lòng chọn ít nhất 1 xe!");
-        return;
     }
+  });
 
-    chitiet += `
+  if (chitiet === "") {
+    alert("vui lòng chọn ít nhất 1 xe!");
+    return;
+  }
+
+  chitiet += `
         <tr>
             <td><b>Tổng cộng</b></td>
             <td><b>${tongTien.toLocaleString()}đ</b></td>
         </tr>
     `;
-    var myWindow = window.open("", "btn_muciuthich", "w-200 h-100");
+  var myWindow = window.open("", "btn_muciuthich", "w-200 h-100");
 
-localStorage.setItem("chitiet", chitiet);
-localStorage.setItem("tongtien", tongTien);
+  localStorage.setItem("chitiet", chitiet);
+  localStorage.setItem("tongtien", tongTien);
 
-
-    myWindow.document.writeln(`
+  myWindow.document.writeln(`
         <div id="infbox" class="border-1">
             <h1>DANH SÁCH CÁC XE TRONG MỤC YÊU THÍCH CỦA BẠN</h1>
             <table>
@@ -236,5 +231,4 @@ localStorage.setItem("tongtien", tongTien);
         
     
         `);
-        
 };
