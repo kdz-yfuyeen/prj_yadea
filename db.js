@@ -175,6 +175,7 @@ const btn_muciuthich = document.getElementById("btn_muciuthich");
 document.getElementById("btn_muciuthich").onclick = function (){
 
     let chitiet= "";
+    let tongTien = 0; // biến để cộng dồn tổng tiền
 
     dba.forEach( g => {
         const checkbox = document.getElementById(`buy${g.id}`);
@@ -182,33 +183,58 @@ document.getElementById("btn_muciuthich").onclick = function (){
         const buy = checkbox.checked;
 
         if (buy){
+            tongTien += g.price; // cộng dồn giá từng xe
             chitiet +=`
                 <tr>
                     <td>${g.name}</td>
                     <td>${g.price.toLocaleString()}đ</td>
                 </tr>
-            `
+            `;
+            
         }
     });
 
     if(chitiet===""){
-        alert("vui lòng chọn ít nhất 1 game để thanh toán!");
+        alert("vui lòng chọn ít nhất 1 xe!");
         return;
     }
 
+    chitiet += `
+        <tr>
+            <td><b>Tổng cộng</b></td>
+            <td><b>${tongTien.toLocaleString()}đ</b></td>
+        </tr>
+    `;
     var myWindow = window.open("", "btn_muciuthich", "w-200 h-100");
+
+localStorage.setItem("chitiet", chitiet);
+localStorage.setItem("tongtien", tongTien);
+
 
     myWindow.document.writeln(`
         <div id="infbox" class="border-1">
             <h1>DANH SÁCH CÁC XE TRONG MỤC YÊU THÍCH CỦA BẠN</h1>
             <table>
+              <tr>
+                        <th>Tên xe</th>
+                        <th>Giá tiền</th>
+                    </tr>
                 <tr>
                     ${chitiet}
                 </tr>
             </table>
             <div>
+            <a href="http://127.0.0.1:5500/frontend/tt.html">
+            <button id="btn_tt">Thanh toán</button>
+            </a>  
+        </div>
+            <div>
 
             </div>
         </div>
+
+        
+    
         `);
-}
+        
+};
