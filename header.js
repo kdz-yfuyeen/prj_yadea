@@ -4,6 +4,7 @@ const productLines = {
       img: "https://www.yadea.com.vn/wp-content/uploads/2025/01/V002-U-anh-chinh-1-480x361.png",
       name: "YADEA Voltguard U",
       desc: "Tiến bước không ngừng",
+      link: "product.html",
     },
     {
       img: "https://www.yadea.com.vn/wp-content/uploads/2025/05/Velax-Anh-nho-ben-tren-480x390.png",
@@ -153,11 +154,11 @@ function renderProducts(containerId, line) {
   container.innerHTML = productLines[line]
     .map(
       (item) => `
-          <div class="text-center">
-            <img src="${item.img}" alt="${item.name}" class="mx-auto h-32 object-contain hover:scale-105 transition-transform" />
-            <h4 class="mt-3 font-bold text-sm">${item.name}</h4>
-            <p class="text-xs text-gray-500 h-8">${item.desc}</p>
-          </div>
+          <a class="text-center" href="${item?.link}" >     
+              <img src="${item.img}" alt="${item.name}" class="mx-auto h-32 object-contain hover:scale-105 transition-transform" />
+              <h4 class="mt-3 font-bold text-sm">${item.name}</h4>
+              <p class="text-xs text-gray-500 h-8">${item.desc}</p>
+          </a>
         `
     )
     .join("");
@@ -184,3 +185,4 @@ document.querySelectorAll(".menu-item").forEach((item) => {
 // Mặc định hiển thị sản phẩm đầu tiên
 renderProducts("product-container", "newProduct1");
 renderProducts("product-container-2", "newProduct2");
+
