@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Đăng ký lái thử</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex flex-col items-center justify-center h-screen bg-gray-100">
+  <div class="bg-white p-6 rounded-xl shadow-lg w-80 text-center">
+    <h2 class="text-xl font-bold text-orange-500 mb-4">Đăng ký lái thử</h2>
+    <input type="text" placeholder="Họ và tên" class="border p-2 rounded w-full mb-2">
+    <input type="tel" placeholder="Số điện thoại" class="border p-2 rounded w-full mb-2">
+    <input type="text" placeholder="Email" class="border p-2 rounded w-full mb-2">
+    <label class="block mb-2 font-medium text-gray-700">Chọn mẫu lái thử</label>
+    <select class="border border-gray-300 rounded w-full p-2 mb-4">
+      <option>YADEA Voltguard P</option>
+      <option>YADEA Xmen Neo</option>
+      <option>YADEA Ulike</option>
+      <option>YADEA BuyE</option>
+    </select>
+    <div class="grid grid-cols-2 gap-3 mb-4">
+      <select class="border border-gray-300 rounded p-2">
+        <option>Chọn Tỉnh / Thành Phố</option>
+        <option>Hà Nội</option>
+        <option>TP. Hồ Chí Minh</option>
+        <option>Đà Nẵng</option>
+        <option>Cần Thơ</option>
+      </select>
+      <select class="border border-gray-300 rounded p-2 focus:ring-2 focus:ring-orange-400">
+        <option>Chọn Quận / Huyện</option>
+        <option>Quận 1</option>
+        <option>Quận 3</option>
+        <option>Quận 7</option>
+        <option>Huyện Bình Chánh</option>
+      </select>
+    </div>
+    <select class="border border-gray-300 rounded w-full p-2 mb-4 ">
+      <option>Chọn cửa hàng</option>
+      <option>YADEA Nguyễn Văn Cừ</option>
+      <option>YADEA Phạm Văn Đồng</option>
+      <option>YADEA CMT8</option>
+    </select>
+    <label class="flex items-start space-x-2 mb-4">
+      <input type="checkbox" checked class="mt-1 w-4 h-4 accent-orange-500">
+      <span class="text-sm text-gray-700">
+        Tôi đồng ý rằng dữ liệu cá nhân của tôi sẽ được sử dụng để đăng ký lái thử
+        và đại lý YADEA sẽ liên hệ với tôi qua email hoặc điện thoại.
+      </span>
+    </label>
+    <button class="bg-orange-500 text-white px-4 py-2 rounded w-full hover:bg-orange-600">
+      Gửi đăng ký
+    </button>
+  </div>
+</body>
+</html>

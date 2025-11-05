@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>Nhà máy sản xuất xe máy điện, xe đạp điện | YADEA Việt Nam</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body class="bg-gray-100">
+  <div class="bg-black p-2 flex text-left space-x-5 justify-end px-10">
+    <a class="text-white font-medium hover:text-[#ff5f00]" href="#">CÔNG NGHỆ</a>
+    <a class="text-white font-medium hover:text-[#ff5f00]" href="#">HỖ TRỢ & BẢO HÀNH</a>
+    <a class="text-white font-medium hover:text-[#ff5f00]" href="#">TIN TỨC</a>
+    <a class="text-white font-medium hover:text-[#ff5f00]" href="#">CƠ HỘI HỢP TÁC</a>
+  </div>
+  <div class="bg-gray-300 flex justify-around p-2">
+    <img class="" src="https://www.yadea.com.vn/wp-content/uploads/2023/09/logo-yadea.svg" alt="" />
+    <div class="flex text-left space-x-10 my-2">
+      <div>
+        <div id="btn_xmd" class="flex">
+          <p class="font-medium hover:text-[#ff5f00]">XE MÁY ĐIỆN</p>
+          <svg class="my-1 icon1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-chevron-down-icon lucide-chevron-down">
+            <path d="m6 9 6 6 6-6" />
+          </svg>
+        </div>
+        <div id="menu_xmd" class="absolute left-0 right-0 bg-white shadow-lg">
+          <div class="flex">
+            <div>
+              <h3 class="font-bold text-lg mb-4 p-2 text-orange-500">
+                Các dòng sản phẩm
+              </h3>
+              <div class="flex justify-between">
+                <div id="btn_spm"
+                  class=" flex justify-between items-center px-5 h-10 w-70  hover:text-white hover:border-[#ff5f00] hover:border-1 hover:bg-[#ff5f00] hover:rounded-lg">
+                  <h3 class="">
+                    Sản phẩm mới
+                  </h3>
+                  <svg class="m-1 " xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-chevron-right-icon lucide-chevron-right">
+                    <path d="m9 18 6-6-6-6" />
+                  </svg>
+
+                </div>
+
+              </div>
+              <div id="btn_city"
+                class="flex items-center px-5 h-10 w-70 justify-between hover:text-white hover:border-[#ff5f00] hover:border-1 hover:bg-[#ff5f00] hover:rounded-lg">
+                <h3 class="">
+                  Dòng City
+                </h3>
+                <svg class="m-1 " xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="lucide lucide-chevron-right-icon lucide-chevron-right">
+                  <path d="m9 18 6-6-6-6" />
+                </svg>
+              </div>
+              <div id="btn_sport"
+                class="flex items-center px-5 h-10 w-70 justify-between hover:text-white hover:border-[#ff5f00] hover:border-1 hover:bg-[#ff5f00] hover:rounded-lg">
+                <h3 class="">
+                  Dòng Sport
+                </h3>
+                <svg class="m-1 " xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="lucide lucide-chevron-right-icon lucide-chevron-right">
+                  <path d="m9 18 6-6-6-6" />
+                </svg>
+              </div>
+              <div id="btn_soobin"
+                class="flex items-center px-5 h-10 w-70 justify-between hover:text-white hover:border-[#ff5f00] hover:border-1 hover:bg-[#ff5f00] hover:rounded-lg">
+                <h3 class="">
+                  YADEA X SOOBIN
+                </h3>
+                <svg class="m-1 " xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="lucide lucide-chevron-right-icon lucide-chevron-right">
+                  <path d="m9 18 6-6-6-6" />
+                </svg>
+              </div>
+            </div>
+            <div id="spm" class="grid grid-cols-4 gap-10 p-4 hidden ">
+              <div class="text-center">
+                <img src="https://www.yadea.com.vn/wp-content/uploads/2025/05/Velax-Anh-nho-ben-tren-480x390.png"
+                  alt="Voltguard" class="mx-auto w-50 h-50 transition-transform duration-300 hover:scale-105" />
+                <p class="font-medium mt-2">YADEA Voltguard U</p>
+                <p class="text-gray-400">Tiến bước không ngừng</p>
+              </div>
+              <div class="text-center">
+                <img src="https://www.yadea.com.vn/wp-content/uploads/2025/01/V002-U-anh-chinh-1-480x361.png"
+                  alt="Velax" class="mx-auto w-50 h-50 transition-transform duration-300 hover:scale-105" />
+                <p class="font-medium mt-2">YADEA Velax</p>
+                <p class="text-gray-400">Thông minh vượt trội</p>
+              </div>
+              <div class="text-center">
+                <img src="https://www.yadea.com.vn/wp-content/uploads/2024/06/Orla-P-45-co-bong-480x389.png"
+                  alt="Orla P" class="mx-auto w-50 h-50 transition-transform duration-300 hover:scale-105" />
+                <p class="font-medium mt-2">YADEA Orla P</p>
+                <p class="text-gray-400">Tỏa sáng vượt thời gian</p>
+              </div>
+              <div class="text-center">
+                <img
+                  src="https://www.yadea.com.vn/wp-content/uploads/2023/11/1807-chinh-anh-sang-oris-xanh-45-480x360.png"
+                  alt="Oris" class="mx-auto w-50 h-50 transition-transform duration-300 hover:scale-105" />
+                <p class="font-medium mt-2">YADEA Oris</p>
+                <p class="text-gray-400">Lái Oris đón đầu thử thách</p>
+              </div>
+            </div>
+            <div id="city" class="grid grid-cols-4 gap-10 p-4 hidden ">
+              <div class="text-center">
+                <img src="https://www.yadea.com.vn/wp-content/uploads/2025/01/Anh-V002P-chinh-480x389.png"
+                  alt="Voltguard" class="mx-auto w-50 h-50 transition-transform duration-300 hover:scale-105" />
+                <p class="font-medium mt-2">YADEA Voltguard U</p>
+                <p class="text-gray-400">Xe điện máy tính năng vượt trội</p>
+              </div>
+              <div class="text-center">
+                <img src="https://www.yadea.com.vn/wp-content/uploads/2023/11/ocean-cyan-002-480x389.png" alt="Velax"
+                  class="mx-auto w-50 h-50 transition-transform duration-300 hover:scale-105" />
+                <p class="font-medium mt-2">YADEA Ocean</p>
+              </div>
+              <div class="text-center">
+                <img src="https://www.yadea.com.vn/wp-content/uploads/2023/11/icute-1-480x422.png" alt="Orla P"
+                  class="mx-auto w-50 h-50 transition-transform duration-300 hover:scale-105" />
+                <p class="font-medium mt-2">YADEA iCute</p>
+              </div>
+              <div class="text-center">
+                <img src="https://www.yadea.com.vn/wp-content/uploads/2023/11/odoras-white-1-480x389.png" alt="Oris"
+                  class="mx-auto w-50 h-50 transition-transform duration-300 hover:scale-105" />
+                <p class="font-medium mt-2">YADEA ODORA S</p>
+              </div>
+            </div>
+            <div id="sport" class="grid grid-cols-4 gap-10 p-4 hidden ">
+              <div class="text-center">
+                <img src="https://www.yadea.com.vn/wp-content/uploads/2025/03/2-anh-cung-kich-thuoc-Vekoo-2-480x390.png"
+                  alt="Voltguard" class="mx-auto w-50 h-50 transition-transform duration-300 hover:scale-105" />
+                <p class="font-medium mt-2">YADEA Vekko</p>
+              </div>
+              <div class="text-center">
+                <img src="https://www.yadea.com.vn/wp-content/uploads/2024/09/xzone-cheo-xam-480x389.webp" alt="Velax"
+                  class="mx-auto w-50 h-50 transition-transform duration-300 hover:scale-105" />
+                <p class="font-medium mt-2">YADEA X-Zone</p>
+              </div>
+              <div class="text-center">
+                <img src="https://www.yadea.com.vn/wp-content/uploads/2023/11/xmen-1-480x390.png" alt="Orla P"
+                  class="mx-auto w-50 h-50 transition-transform duration-300 hover:scale-105" />
+                <p class="font-medium mt-2">YADEA Xmen Neo</p>
+              </div>
+              <div class="text-center">
+                <img src="https://www.yadea.com.vn/wp-content/uploads/2025/02/2-anh-cung-kich-thuoc-XSKy-1-480x390.png"
+                  alt="Oris" class="mx-auto w-50 h-50 transition-transform duration-300 hover:scale-105" />
+                <p class="font-medium mt-2">YADEA X-Sky</p>
+              </div>
+            </div>
+            <div id="soobin" class="grid grid-cols-4 gap-10 p-4 hidden  ">
+              <div class="text-center">
+                <img src="https://www.yadea.com.vn/wp-content/uploads/2025/05/Vekoo-Anh-nho-ben-tren-480x390.png"
+                  alt="Voltguard" class="mx-auto w-50 h-50 transition-transform duration-300 hover:scale-105" />
+                <p class="font-medium mt-2">YADEA VEKOO X SOOBIN</p>
+              </div>
+              <div class="text-center">
+                <img src="https://www.yadea.com.vn/wp-content/uploads/2025/05/Sb-Velax-Anh-nho-ben-tren-480x390.png"
+                  alt="Velax" class="mx-auto w-50 h-50 transition-transform duration-300 hover:scale-105" />
+                <p class="font-medium mt-2">YADEA VELAX X SOOBIN</p>
+              </div>
+              <div class="text-center">
+                <img src="https://www.yadea.com.vn/wp-content/uploads/2025/05/Sb-Oris-Anh-nho-ben-tren-480x390.png"
+                  alt="Orla P" class="mx-auto w-50 h-50 transition-transform duration-300 hover:scale-105" />
+                <p class="font-medium mt-2">YADEA ORIS X SOOBIN</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div>
+        <div id="btn_xgmd" class="flex">
+          <p class="font-medium hover:text-[#ff5f00]">XE GẮN MÁY ĐIỆN</p>
+          <svg class="my-1 icon1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-chevron-down-icon lucide-chevron-down">
+            <path d="m6 9 6 6 6-6" />
+          </svg>
+        </div>
+        <div id="menu_xgmd" class="absolute left-0 right-0 bg-white shadow-lg">
+          <div class="flex">
+            <div>
+              <h3 class="font-bold text-lg mb-4 p-2 text-orange-500">
+                Các dòng sản phẩm
+              </h3>
+              <div class="flex justify-between">
+                <div id="btn_spm2"
+                  class=" flex justify-between items-center px-5 h-10 w-70  hover:text-white hover:border-[#ff5f00] hover:border-1 hover:bg-[#ff5f00] hover:rounded-lg">
+                  <h3 class="">
+                    Sản phẩm mới
+                  </h3>
+                  <svg class="m-1 " xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-chevron-right-icon lucide-chevron-right">
+                    <path d="m9 18 6-6-6-6" />
+                  </svg>
+
+                </div>
+
+              </div>
+              <div id="btn_tl"
+                class="flex items-center px-5 h-10 w-70 justify-between hover:text-white hover:border-[#ff5f00] hover:border-1 hover:bg-[#ff5f00] hover:rounded-lg">
+                <h3 class="">
+                  Dòng Trợ Lực
+                </h3>
+                <svg class="m-1 " xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="lucide lucide-chevron-right-icon lucide-chevron-right">
+                  <path d="m9 18 6-6-6-6" />
+                </svg>
+              </div>
+            </div>
+            <div id="spm2" class="grid grid-cols-4 gap-10 p-4 hidden ">
+              <div class="text-center">
+                <img src="https://www.yadea.com.vn/wp-content/uploads/2025/05/Velax-Anh-nho-ben-tren-480x390.png"
+                  alt="Voltguard" class="mx-auto w-50 h-50 transition-transform duration-300 hover:scale-105" />
+                <p class="font-medium mt-2">YADEA i8 VINTAGE</p>
+                <p class="text-gray-400">Xe điện thế hệ mới</p>
+              </div>
+              <div class="text-center">
+                <img
+                  src="https://www.yadea.com.vn/wp-content/uploads/2025/03/Anrh-nho-ben-tren-480x361-i8-gau-xanh-sua-480x361.png"
+                  alt="Velax" class="mx-auto w-50 h-50 transition-transform duration-300 hover:scale-105" />
+                <p class="font-medium mt-2">YADEA i8</p>
+              </div>
+              <div class="text-center">
+                <img src="https://www.yadea.com.vn/wp-content/uploads/2023/11/Anh-nho-ben-tren-480x361-1-480x361.png"
+                  alt="Orla P" class="mx-auto w-50 h-50 transition-transform duration-300 hover:scale-105" />
+                <p class="font-medium mt-2">YADEA iFUN</p>
+                <p class="text-gray-400">Khởi đầu hành trình vui vẻ </p>
+              </div>
+              <div class="text-center">
+                <img
+                  src="https://www.yadea.com.vn/wp-content/uploads/2023/11/1807-chinh-anh-sang-oris-xanh-45-480x360.png"
+                  alt="Oris" class="mx-auto w-50 h-50 transition-transform duration-300 hover:scale-105" />
+                <p class="font-medium mt-2">YADEA I6</p>
+              </div>
+            </div>
+            <div id="tl" class="grid grid-cols-4 gap-10 p-4 hidden ">
+              <div class="text-center">
+                <img src="https://www.yadea.com.vn/wp-content/uploads/2025/09/avt-yadea-vito.png" alt="Voltguard"
+                  class="mx-auto w-50 h-50 transition-transform duration-300 hover:scale-105" />
+                <p class="font-medium mt-2">YADEA VITO</p>
+                <p class="text-gray-400">Xe đạp trợ lực điện thể thao đô thị</p>
+              </div>
+              <div class="text-center">
+                <img src="https://www.yadea.com.vn/wp-content/uploads/2025/09/avt-yadea-flit.png" alt="Velax"
+                  class="mx-auto w-50 h-50 transition-transform duration-300 hover:scale-105" />
+                <p class="font-medium mt-2">YADEA FLIT</p>
+                <p>Xe đạp điện trợ lực gấp gọn tiện lợi</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <p class="font-medium hover:text-[#ff5f00]">VỀ YADEA</p>
+      <p class="font-medium hover:text-[#ff5f00]">CỬA HÀNG</p>
+      <div>
+        <div id="btnMenu">
+          <svg class="text-[#ff5f00] hover:bg-[#ff5f00] hover:text-white p-1" xmlns="http://www.w3.org/2000/svg"
+            width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-bag-icon lucide-shopping-bag">
+            <path d="M16 10a4 4 0 0 1-8 0" />
+            <path d="M3.103 6.034h17.794" />
+            <path
+              d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z" />
+          </svg>
+        </div>
+        <div id="dropdownMenu" class="absolute origin-top-right bg-gray-200 m-1 shadow-lg hidden">
+          <a class="block py-1 hover:bg-gray-400"
+            href="https://shopee.vn/yadea2023?uls_trackid=543nr4gv003s&utm_campaign=id_KYf5PLXIRo&utm_content=----&utm_medium=affiliates&utm_source=an_17342940115&utm_term=dwnrw2y9fg1m">
+            <img class="w-8" src="img/1656180674shopee-logo-transparent.png" alt="" />
+          </a>
+          <a class="block py-1 hover:bg-gray-400"
+            href="https://www.lazada.vn/shop/yadea-electric-motorcycle?path=index.htm&inWeexShop=true&lang=vi&channelSource=defaultChannel&dsource=share&laz_share_info=2058979970_0_200_210160014081_2058981970_store-profile&laz_token=d6f3dff1b333c39dea814265ec206b64&dsource=share&laz_share_info=2058993702_1_9300_210160014081_2058995702_copy-linktool-campaign-default&laz_token=3a8495988e90957c6a4c4c0c0764d7c7&trafficFrom=17449020_303586&laz_trackid=2:mm_253341341_228653010_2186953010:clkgikqsm1j95eg3e78p6j&mkttid=clkgikqsm1j95eg3e78p6j&exlaz=c_lzd_byr:mm_253341341_228653010_2186953010!vn1296001:clkgikqsm1j95eg3e78p6j::">
+            <img class="w-8" src="img/1685525042lazada-app-logo.png" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  </div>
+
+  <div>
+    <div>
+      <div class="bg-[#396d7b] flex justify-between">
+        <div class="w-120 p-4 space-y-2">
+          <h1 class="font-bold text-6xl text-white py-2">YADEA VOLTGUARD U</h1>
+          <h2 class="font-bold text-3xl text-white">TRÍ TUỆ DẪN LỐI TIẾN BƯƠC KHÔNG NGỪNG</h2>
+          <p class="border-t-1 border-gray-700 w-100"></p>
+          <p class="font-bold text-xl text-white">giá bán lẻ đề xuất</p>
+          <p class="font-bold text-3xl text-[#ff5f00] line-through">45,990,000 VND</p>
+          <p class="font-bold text-3xl text-[#ff5f00]">38,990,000 VND</p>
+          <div class="flex border-1 bg-white p-2 border-white rounded-lg justify-between w-60 mt-7">
+            <p>CHỌN MUA SẢN PHẨM</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-arrow-right-icon lucide-arrow-right">
+              <path d="M5 12h14" />
+              <path d="m12 5 7 7-7 7" />
+            </svg>
+          </div>
+          <div class="flex border-2 p-2 border-white rounded-lg justify-between w-60 mt-3">
+            <p>ĐĂNG KÝ LÁI THỬ</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-arrow-right-icon lucide-arrow-right">
+              <path d="M5 12h14" />
+              <path d="m12 5 7 7-7 7" />
+            </svg>
+          </div>
+        </div>
+        <div class="bg-[#5c7b87] border-1 border-[#5c7b87] h-110 m-7 flex flex-col items-center text-white p-6 ">
+          <p class="mt-6">Tốc độ tối đa</p>
+          <p class="font-bold">76 Km/h</p>
+          <p class="mt-6">Quãng đường</p>
+          <p class="font-bold">112 Km</p>
+          <p class="mt-6">Bảo hành</p>
+          <p class="font-bold">30.000Km</p>
+          <p>hoặc 3 năm</p>
+          <p class="mt-6">Nền tảng</p>
+          <img class="w-10 h-5" src="https://www.yadea.com.vn/wp-content/uploads/2024/07/aigo-logo.webp" alt="">
+          <p>Yadea AiGO</p>
+        </div>
+      </div>
+      <img class="-mt-90 w-170 h-120 mx-auto"
+        src="https://www.yadea.com.vn/wp-content/uploads/2024/11/Anh-sp-ngang-v002-U-1280x880-1.png" alt="">
+    </div>
+    <img src="https://www.yadea.com.vn/wp-content/uploads/2024/11/Picture1-e1732781738240.png" alt="">
+    <div class="bg-black text-white p-10">
+      <div class="flex justify-center">
+        <p class="font-bold text-3xl">
+          <span class="">NÂNG CẤP</span>
+          <span class="text-[#ff5f00]">THÔNG MINH</span>
+        </p>
+      </div>
+      <div class="flex">
+        <div class="m-10 space-y-3 py-20">
+          <h1 class="font-semibold text-2xl">CHÌA KHÓA THÔNG MINH KẾT NỐI HÀNH TRÌNH</h1>
+          <p>Kết nối thông minh không cần chìa khóa, thông qua YADEA APP tiện lợi</p>
+          <p>Mở khóa bằng ứng dụng trên điện thoại</p>
+          <p>Mở khóa bằng Bluetooth khi đến gần</p>
+          <p>Mở khóa bằng Remote</p>
+          <p>Mở khóa bằng khóa núm vân tay</p>
+        </div>
+        <div>
+          <img class="w-160 h-140" src="https://www.yadea.com.vn/wp-content/uploads/2024/11/V002-U-app.jpg" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="bg-black text-white p-10 flex">
+      <div class="mx-5">
+        <img src="https://www.yadea.com.vn/wp-content/uploads/2024/11/Picture12.png" alt="">
+      </div>
+      <div class="m-10 space-y-3 py-20">
+        <h1 class="font-semibold text-2xl">YADEA APP - ĐIỀU KHIỂN XE TỪ XA</h1>
+        <p>Hiển thị tình trạng xe trên YADEA APP</p>
+        <p>Kiểm tra trạng thái pin, quãng đường di chuyển </p>
+        <p>Nâng cấp OTA - Nhiều tính năng hơn.</p>
+        <h1 class="font-semibold text-2xl">TÀI KHOẢN GIA ĐÌNH </h1>
+        <p>Hỗ trợ chia sẻ tài khoản gia đình, dễ dàng mở khóa từ xa, cả gia đình dùng cung thông tin qua app điện thoại,
+          tài khoản chia sẻ lên tới 5 người. </p>
+      </div>
+    </div>
+    <div class="bg-black text-white p-10">
+      <div class="flex justify-between">
+        <div class="m-10 space-y-3 py-20">
+          <h1 class="font-semibold text-2xl">CHỐNG TRỘM THÔNG MINH</h1>
+          <p class="border-b-2 border-t-2 p-3 border-[#ff5f00]">Bảo vệ xe toàn diện 360</p>
+          <p>Ứng dụng công nghệ thông minh</p>
+          <p>Định vị GPS chuẩn xác</p>
+          <p>Hàng rào điện tử</p>
+          <p>Cảnh báo chuyển động bất thường</p>
+          <p>Chế độ báo mất xe</p>
+        </div>
+        <div>
+          <img class="w-140 h-120" src="https://www.yadea.com.vn/wp-content/uploads/2024/11/Thiet-ke-chua-co-ten.png"
+            alt="">
+        </div>
+      </div>
+    </div>
+    <div class="bg-black text-white p-10">
+      <div class="flex justify-center">
+        <p class="font-bold text-3xl">
+          <span class="">NÂNG CẤP</span>
+          <span class="text-[#ff5f00]">TÍNH NĂNG</span>
+        </p>
+      </div>
+      <div class="flex">
+        <div class="mx-5">
+          <img src="https://www.yadea.com.vn/wp-content/uploads/2024/11/v002-u-leo-doc.png" alt="">
+        </div>
+        <div class="m-10 space-y-3 p-20 ">
+          <h1 class="font-semibold text-2xl">NÂNG CẤP ĐỘNG CƠ</h1>
+          <p class="border-b-2 border-t-2 p-3 border-[#ff5f00]">Khởi động nhanh - Hoạt động ổn định ổn định - Vận hành
+            mượt mà</p>
+          <p>Thiết kế mạch từ mới với dây đồng tối ưu, động cơ đạt hiệu suất 89%, khởi động nhanh, vận hành êm ái, mang
+            đến tốc độ và sự thoải mái vượt trội </p>
+          <div class="flex space-x-10">
+            <div>
+              <p>Hiệu suất</p>
+              <p class="font-bold text-[#ff5f00]">89%</p>
+            </div>
+            <div>
+              <p>Bảo vệ</p>
+              <p class="font-bold text-[#ff5f00]">IP67</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-black text-white p-10">
+      <div class="flex justify-between ">
+        <div class="m-10 space-y-3 w-150 ">
+          <h1 class="font-semibold text-2xl">ĐỘNG CƠ ĐỘC QUYỀN</h1>
+          <h1 class="font-semibold text-2xl text-blue-300">YADEA TTFAR</h1>
+          <p class="border-b-2 border-t-2 p-3 border-[#ff5f00]">Mạnh mẽ hơn - Ổn định - Êm ái hơn</p>
+          <p>Trang bị động cơ công suất tối đa 4300W, hoạt động bền bỉ, công nghệ cuộn dây đơn dây cuộn mật độ dày cao
+            gọn gàng phẳng khe hở ít, giúp hiệu suất của động cơ tăng 35%. Bộ điều khiểu thu hồi điện năng.</p>
+          <div class="flex space-x-10">
+            <div>
+              <p>Tốc độ tối đa</p>
+              <p class="font-bold text-[#ff5f00]">76 km/h</p>
+            </div>
+            <div>
+              <p>Tăng tốc trong 2,9s</p>
+              <p class="font-bold text-[#ff5f00]">0-30km/h</p>
+            </div>
+          </div>
+          <p>Leo dốc cao</p>
+          <p class="font-bold text-[#ff5f00]">17 độ</p>
+        </div>
+        <div>
+          <img class="w-140 h-120" src="https://www.yadea.com.vn/wp-content/uploads/2023/09/voltguard-engine.png"
+            alt="">
+        </div>
+      </div>
+    </div>
+    <div class="bg-black text-white p-10">
+      <div class="flex justify-center">
+        <p class="font-bold text-3xl">
+          <span class="">NÂNG CẤP</span>
+          <span class="text-[#ff5f00]">TÍNH NĂNG</span>
+        </p>
+      </div>
+      <div class="flex">
+        <div class="mx-5">
+          <img src="https://www.yadea.com.vn/wp-content/uploads/2024/11/fsdc_885beefa39-e1735877612537-1280x939.jpg"
+            alt="">
+        </div>
+        <div class="m-10 space-y-3 p-20 ">
+          <h1 class="font-semibold text-2xl">NÂNG CẤP ĐỘNG CƠ</h1>
+          <p class="border-b-2 border-t-2 p-3 border-[#ff5f00]">Khởi động nhanh - Hoạt động ổn định ổn định - Vận hành
+            mượt mà</p>
+          <p>Thiết kế mạch từ mới với dây đồng tối ưu, động cơ đạt hiệu suất 89%, khởi động nhanh, vận hành êm ái, mang
+            đến tốc độ và sự thoải mái vượt trội </p>
+          <div class="flex space-x-10">
+            <div>
+              <p>Hiệu suất</p>
+              <p class="font-bold text-[#ff5f00]">89%</p>
+            </div>
+            <div>
+              <p>Bảo vệ</p>
+              <p class="font-bold text-[#ff5f00]">IP67</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-black text-white p-10">
+      <div class="flex justify-between ">
+        <div class="m-10 space-y-3 w-150 ">
+          <h1 class="font-semibold text-2xl">ĐỘNG CƠ ĐỘC QUYỀN</h1>
+          <h1 class="font-semibold text-2xl text-blue-300">YADEA TTFAR</h1>
+          <p class="border-b-2 border-t-2 p-3 border-[#ff5f00]">Mạnh mẽ hơn - Ổn định - Êm ái hơn</p>
+          <p>Trang bị động cơ công suất tối đa 4300W, hoạt động bền bỉ, công nghệ cuộn dây đơn dây cuộn mật độ dày cao
+            gọn gàng phẳng khe hở ít, giúp hiệu suất của động cơ tăng 35%. Bộ điều khiểu thu hồi điện năng.</p>
+          <div class="flex space-x-10">
+            <div>
+              <p>Tốc độ tối đa</p>
+              <p class="font-bold text-[#ff5f00]">76 km/h</p>
+            </div>
+            <div>
+              <p>Tăng tốc trong 2,9s</p>
+              <p class="font-bold text-[#ff5f00]">0-30km/h</p>
+            </div>
+          </div>
+          <p>Leo dốc cao</p>
+          <p class="font-bold text-[#ff5f00]">17 độ</p>
+        </div>
+        <div>
+          <img class="w-140 h-120" src="https://www.yadea.com.vn/wp-content/uploads/2024/11/U-Den-xe.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="bg-black text-white p-10">
+      <div class="flex justify-center">
+        <p class="font-bold text-3xl">
+          <span class="">NÂNG CẤP</span>
+          <span class="text-[#ff5f00]">TÍNH NĂNG</span>
+        </p>
+      </div>
+      <div class="flex">
+        <div class="mx-5">
+          <img src="https://www.yadea.com.vn/wp-content/uploads/2024/11/Thiet-ke-chua-co-ten-5.png" alt="">
+        </div>
+        <div class="m-10 space-y-3 p-20 ">
+          <h1 class="font-semibold text-2xl">NÂNG CẤP ĐỘNG CƠ</h1>
+          <p class="border-b-2 border-t-2 p-3 border-[#ff5f00]">Khởi động nhanh - Hoạt động ổn định ổn định - Vận hành
+            mượt mà</p>
+          <p>Thiết kế mạch từ mới với dây đồng tối ưu, động cơ đạt hiệu suất 89%, khởi động nhanh, vận hành êm ái, mang
+            đến tốc độ và sự thoải mái vượt trội </p>
+          <div class="flex space-x-10">
+            <div>
+              <p>Hiệu suất</p>
+              <p class="font-bold text-[#ff5f00]">89%</p>
+            </div>
+            <div>
+              <p>Bảo vệ</p>
+              <p class="font-bold text-[#ff5f00]">IP67</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-black text-white p-10">
+      <div class="flex justify-between ">
+        <div class="m-10 space-y-3 w-150 ">
+          <h1 class="font-semibold text-2xl">ĐỘNG CƠ ĐỘC QUYỀN</h1>
+          <h1 class="font-semibold text-2xl text-blue-300">YADEA TTFAR</h1>
+          <p class="border-b-2 border-t-2 p-3 border-[#ff5f00]">Mạnh mẽ hơn - Ổn định - Êm ái hơn</p>
+          <p>Trang bị động cơ công suất tối đa 4300W, hoạt động bền bỉ, công nghệ cuộn dây đơn dây cuộn mật độ dày cao
+            gọn gàng phẳng khe hở ít, giúp hiệu suất của động cơ tăng 35%. Bộ điều khiểu thu hồi điện năng.</p>
+          <div class="flex space-x-10">
+            <div>
+              <p>Tốc độ tối đa</p>
+              <p class="font-bold text-[#ff5f00]">76 km/h</p>
+            </div>
+            <div>
+              <p>Tăng tốc trong 2,9s</p>
+              <p class="font-bold text-[#ff5f00]">0-30km/h</p>
+            </div>
+          </div>
+          <p>Leo dốc cao</p>
+          <p class="font-bold text-[#ff5f00]">17 độ</p>
+        </div>
+        <div>
+          <img class="w-140 h-120"
+            src="https://www.yadea.com.vn/wp-content/uploads/2024/11/Thiet-ke-chua-co-ten-15-e1732947598258.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="bg-black text-white p-10">
+      <div class="flex justify-center">
+        <p class="font-bold text-3xl">
+          <span class="">NÂNG CẤP</span>
+          <span class="text-[#ff5f00]">TÍNH NĂNG</span>
+        </p>
+      </div>
+      <div class="flex">
+        <div class="mx-5">
+          <img src="https://www.yadea.com.vn/wp-content/uploads/2024/11/chong-nuoc-volt-U.png" alt="">
+        </div>
+        <div class="m-10 space-y-3 p-20 ">
+          <h1 class="font-semibold text-2xl">NÂNG CẤP ĐỘNG CƠ</h1>
+          <p class="border-b-2 border-t-2 p-3 border-[#ff5f00]">Khởi động nhanh - Hoạt động ổn định ổn định - Vận hành
+            mượt mà</p>
+          <p>Thiết kế mạch từ mới với dây đồng tối ưu, động cơ đạt hiệu suất 89%, khởi động nhanh, vận hành êm ái, mang
+            đến tốc độ và sự thoải mái vượt trội </p>
+          <div class="flex space-x-10">
+            <div>
+              <p>Hiệu suất</p>
+              <p class="font-bold text-[#ff5f00]">89%</p>
+            </div>
+            <div>
+              <p>Bảo vệ</p>
+              <p class="font-bold text-[#ff5f00]">IP67</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-black text-white p-10">
+      <div class="flex justify-between ">
+        <div class="m-10 space-y-3 w-150 ">
+          <h1 class="font-semibold text-2xl">ĐỘNG CƠ ĐỘC QUYỀN</h1>
+          <h1 class="font-semibold text-2xl text-blue-300">YADEA TTFAR</h1>
+          <p class="border-b-2 border-t-2 p-3 border-[#ff5f00]">Mạnh mẽ hơn - Ổn định - Êm ái hơn</p>
+          <p>Trang bị động cơ công suất tối đa 4300W, hoạt động bền bỉ, công nghệ cuộn dây đơn dây cuộn mật độ dày cao
+            gọn gàng phẳng khe hở ít, giúp hiệu suất của động cơ tăng 35%. Bộ điều khiểu thu hồi điện năng.</p>
+          <div class="flex space-x-10">
+            <div>
+              <p>Tốc độ tối đa</p>
+              <p class="font-bold text-[#ff5f00]">76 km/h</p>
+            </div>
+            <div>
+              <p>Tăng tốc trong 2,9s</p>
+              <p class="font-bold text-[#ff5f00]">0-30km/h</p>
+            </div>
+          </div>
+          <p>Leo dốc cao</p>
+          <p class="font-bold text-[#ff5f00]">17 độ</p>
+        </div>
+        <div>
+          <img class="w-140 h-120" src="https://www.yadea.com.vn/wp-content/uploads/2024/11/khung-xe-voltguard-U.png"
+            alt="">
+        </div>
+      </div>
+    </div>
+    <div class="bg-black text-white p-10">
+      <div class="flex justify-center">
+        <p class="font-bold text-3xl">
+          <span class="">NÂNG CẤP</span>
+          <span class="text-[#ff5f00]">TÍNH NĂNG</span>
+        </p>
+      </div>
+      <div class="flex">
+        <div class="mx-5">
+          <img src="https://www.yadea.com.vn/wp-content/uploads/2024/11/v002-u-leo-doc.png" alt="">
+        </div>
+        <div class="m-10 space-y-3 p-20 ">
+          <h1 class="font-semibold text-2xl">NÂNG CẤP ĐỘNG CƠ</h1>
+          <p class="border-b-2 border-t-2 p-3 border-[#ff5f00]">Khởi động nhanh - Hoạt động ổn định ổn định - Vận hành
+            mượt mà</p>
+          <p>Thiết kế mạch từ mới với dây đồng tối ưu, động cơ đạt hiệu suất 89%, khởi động nhanh, vận hành êm ái, mang
+            đến tốc độ và sự thoải mái vượt trội </p>
+          <div class="flex space-x-10">
+            <div>
+              <p>Hiệu suất</p>
+              <p class="font-bold text-[#ff5f00]">89%</p>
+            </div>
+            <div>
+              <p>Bảo vệ</p>
+              <p class="font-bold text-[#ff5f00]">IP67</p>
+            </div>
+          </div>
+        </div>
+        <div class="mx-5">
+          <img src="https://www.yadea.com.vn/wp-content/uploads/2024/11/v002-u-leo-doc.png" alt="">
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+
+  <div class="m-5 space-y-10">
+    <h1 class="font-bold text-xl flex justify-center">TIỆN ÍCH THÔNG MINH</h1>
+    <div class="swiper mySwiperMenuProduct">
+      <div class="swiper-wrapper ">
+        <div class="swiper-slide"><button class="px-4 py-2 bg-blue-500 text-white rounded-full">Tất cả</button></div>
+        <div class="swiper-slide"><button data-img="img1" class="px-4 py-2 bg-gray-300 rounded-full">CHÂN CHỐNG NGẮT
+            ĐIỆN</button></div>
+        <div class="swiper-slide"><button data-img="img2" class="px-4 py-2 bg-gray-300 rounded-full">CỐP XE RỘNG
+            20L</button></div>
+        <div class="swiper-slide"><button data-img="img3" class="px-4 py-2 bg-gray-300 rounded-full">CỔNG SẠC USB & MÓC
+            TREO ĐỒ</button></div>
+        <div class="swiper-slide"><button data-img="img4" class="px-4 py-2 bg-gray-300 rounded-full">KHÓA NGUỒN THÔNG
+            MINH </button></div>
+        <div class="swiper-slide"><button data-img="img5" class="px-4 py-2 bg-gray-300 rounded-full">KHOẢNG SÀN ĐỂ CHÂN
+            LỚN</button></div>
+        <div class="swiper-slide"><button data-img="img6" class="px-4 py-2 bg-gray-300 rounded-full">YÊN XE ÊM
+            ÁI</button></div>
+      </div>
+    </div>
+    <div class="flex justify-center my-5">
+      <img id="hinhAnh" src="https://www.yadea.com.vn/wp-content/uploads/2024/11/Chan-chong-ngat-dien.png" alt="Ảnh xe"
+        class="w-96 h-64 object-cover rounded-lg shadow-lg transition-all duration-500">
+    </div>
+  </div>
+
+
+  <div class="bg-[#f5f5f5]">
+    <div class=" flex px-50 p-10">
+      <h1 class="font-bold m-5 text-3xl">THÔNG SỐ KỸ THUẬT</h1>
+      <div class="items-center mx-50">
+        <img id="col_xe"
+          src="https://www.yadea.com.vn/wp-content/uploads/2024/11/Anh-sp-ngang-v002-U-1280x880-1-480x330.png" alt=""
+          class="w-96 h-64 object-cover rounded-lg shadow-lg transition-all duration-500">
+        <div class="rounded-full border-1 w-33 p-1 flex space-x-2 mx-35 my-5">
+          <button data-img="col1" class="rounded-full bg-gray-400 w-5 h-5"></button>
+          <button data-img="col2" class="rounded-full bg-red-700 w-5 h-5"></button>
+          <button data-img="col3" class="rounded-full bg-white w-5 h-5"></button>
+          <button data-img="col4" class="rounded-full bg-black w-5 h-5"></button>
+        </div>
+
+        <div>
+          <p class="font-bold text-2xl">YADEA Voltguard U</p>
+          <p class="text-gray-400 font-bold line-through">45,990,000 VND</p>
+          <p class="text-[#ff5f00] font-bold">38,990,000 VND</p>
+        </div>
+
+       <div class="flex ">
+        <a href="http://127.0.0.1:5500/frontend/buyproduct.html">
+         <button id="btn_buy" class="bg-yellow-300 w-40 items-center mx-31">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" width="36px" height="36px">
+            <rect width="36" height="36" x="0" y="0" fill="#fdd835"></rect>
+            <path fill="#e53935"
+              d="M38.67,42H11.52C11.27,40.62,11,38.57,11,36c0-5,0-11,0-11s1.44-7.39,3.22-9.59 c1.67-2.06,2.76-3.48,6.78-4.41c3-0.7,7.13-0.23,9,1c2.15,1.42,3.37,6.67,3.81,11.29c1.49-0.3,5.21,0.2,5.5,1.28 C40.89,30.29,39.48,38.31,38.67,42z">
+            </path>
+            <path fill="#b71c1c"
+              d="M39.02,42H11.99c-0.22-2.67-0.48-7.05-0.49-12.72c0.83,4.18,1.63,9.59,6.98,9.79 c3.48,0.12,8.27,0.55,9.83-2.45c1.57-3,3.72-8.95,3.51-15.62c-0.19-5.84-1.75-8.2-2.13-8.7c0.59,0.66,3.74,4.49,4.01,11.7 c0.03,0.83,0.06,1.72,0.08,2.66c4.21-0.15,5.93,1.5,6.07,2.35C40.68,33.85,39.8,38.9,39.02,42z">
+            </path>
+            <path fill="#212121"
+              d="M35,27.17c0,3.67-0.28,11.2-0.42,14.83h-2C32.72,38.42,33,30.83,33,27.17 c0-5.54-1.46-12.65-3.55-14.02c-1.65-1.08-5.49-1.48-8.23-0.85c-3.62,0.83-4.57,1.99-6.14,3.92L15,16.32 c-1.31,1.6-2.59,6.92-3,8.96v10.8c0,2.58,0.28,4.61,0.54,5.92H10.5c-0.25-1.41-0.5-3.42-0.5-5.92l0.02-11.09 c0.15-0.77,1.55-7.63,3.43-9.94l0.08-0.09c1.65-2.03,2.96-3.63,7.25-4.61c3.28-0.76,7.67-0.25,9.77,1.13 C33.79,13.6,35,22.23,35,27.17z">
+            </path>
+            <path fill="#01579b"
+              d="M17.165,17.283c5.217-0.055,9.391,0.283,9,6.011c-0.391,5.728-8.478,5.533-9.391,5.337 c-0.913-0.196-7.826-0.043-7.696-5.337C9.209,18,13.645,17.32,17.165,17.283z">
+            </path>
+            <path fill="#212121"
+              d="M40.739,37.38c-0.28,1.99-0.69,3.53-1.22,4.62h-2.43c0.25-0.19,1.13-1.11,1.67-4.9 c0.57-4-0.23-11.79-0.93-12.78c-0.4-0.4-2.63-0.8-4.37-0.89l0.1-1.99c1.04,0.05,4.53,0.31,5.71,1.49 C40.689,24.36,41.289,33.53,40.739,37.38z">
+            </path>
+            <path fill="#81d4fa"
+              d="M10.154,20.201c0.261,2.059-0.196,3.351,2.543,3.546s8.076,1.022,9.402-0.554 c1.326-1.576,1.75-4.365-0.891-5.267C19.336,17.287,12.959,16.251,10.154,20.201z">
+            </path>
+            <path fill="#212121"
+              d="M17.615,29.677c-0.502,0-0.873-0.03-1.052-0.069c-0.086-0.019-0.236-0.035-0.434-0.06 c-5.344-0.679-8.053-2.784-8.052-6.255c0.001-2.698,1.17-7.238,8.986-7.32l0.181-0.002c3.444-0.038,6.414-0.068,8.272,1.818 c1.173,1.191,1.712,3,1.647,5.53c-0.044,1.688-0.785,3.147-2.144,4.217C22.785,29.296,19.388,29.677,17.615,29.677z M17.086,17.973 c-7.006,0.074-7.008,4.023-7.008,5.321c-0.001,3.109,3.598,3.926,6.305,4.27c0.273,0.035,0.48,0.063,0.601,0.089 c0.563,0.101,4.68,0.035,6.855-1.732c0.865-0.702,1.299-1.57,1.326-2.653c0.051-1.958-0.301-3.291-1.073-4.075 c-1.262-1.281-3.834-1.255-6.825-1.222L17.086,17.973z">
+            </path>
+            <path fill="#e1f5fe"
+              d="M15.078,19.043c1.957-0.326,5.122-0.529,4.435,1.304c-0.489,1.304-7.185,2.185-7.185,0.652 C12.328,19.467,15.078,19.043,15.078,19.043z">
+            </path>
+          </svg>
+          <span class="now">now!</span>
+          <span class="play">buy</span>
+        </button>
+       </a>
+       <div class="">
+        <div class="heart-container" title="Like">
+            <input type="checkbox" class="checkbox" id="Give-It-An-Id">
+            <div class="svg-container">
+                <svg viewBox="0 0 24 24" class="svg-outline" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Zm-3.585,18.4a2.973,2.973,0,0,1-3.83,0C4.947,16.006,2,11.87,2,8.967a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,8.967a1,1,0,0,0,2,0,4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,8.967C22,11.87,19.053,16.006,13.915,20.313Z">
+                    </path>
+                </svg>
+                <svg viewBox="0 0 24 24" class="svg-filled" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Z">
+                    </path>
+                </svg>
+                <svg class="svg-celebrate" width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+                    <polygon points="10,10 20,20"></polygon>
+                    <polygon points="10,50 20,50"></polygon>
+                    <polygon points="20,80 30,70"></polygon>
+                    <polygon points="90,10 80,20"></polygon>
+                    <polygon points="90,50 80,50"></polygon>
+                    <polygon points="80,80 70,70"></polygon>
+                </svg>
+            </div>
+        </div>
+        <p class="w-50">Thêm vào mục yêu thích</p>
+
+       </div>
+
+       </div>
+        
+      </div>
+    </div>
+    <div class="mx-20">
+
+      <div class="spec-section my-5">
+        <div class="spec-header grid grid-cols-3 items-center bg-[#e5e5e5]! p-3 sm:p-4">
+          <h2 class="text-base sm:text-lg font-bold text-gray-800 uppercase text-left">KÍCH THƯỚC, TRỌNG LƯỢNG</h2>
+          <h2 class="text-base sm:text-lg font-bold text-gray-800 uppercase text-center">YADEA VOLTGUARD U
+          </h2>
+          <div class="arrow text-xl text-gray-600 cursor-pointer justify-self-end">
+            &darr;
+          </div>
+        </div>
+
+        <div class="spec-content text-sm sm:text-base text-gray-700">
+          <div class="flex bg-white">
+            <div class="w-1/2 p-3 sm:p-4 font-medium">Dài x rộng x cao (mm)</div>
+            <div class="w-1/2 p-3 sm:p-4 font-medium">1945x720x1130mm</div>
+          </div>
+
+          <div class="flex bg-white">
+            <div class="w-1/2 p-3 sm:p-4 font-medium">Màn hình</div>
+            <div class="w-1/2 p-3 sm:p-4 font-medium">Màn hình tinh thể lỏng 6.4 inch</div>
+          </div>
+
+          <div class="flex bg-white">
+            <div class="w-1/2 p-3 sm:p-4 font-medium">Độ cao gầm / Khoảng sáng gầm xe</div>
+            <div class="w-1/2 p-3 sm:p-4 font-medium">140mm</div>
+          </div>
+
+          <div class="flex bg-white">
+            <div class="w-1/2 p-3 sm:p-4 font-medium">Độ cao yên xe</div>
+            <div class="w-1/2 p-3 sm:p-4 font-medium">770mm</div>
+          </div>
+
+          <div class="flex bg-white">
+            <div class="w-1/2 p-3 sm:p-4 font-medium">Khối lượng bản thân</div>
+            <div class="w-1/2 p-3 sm:p-4 font-medium">118 kg</div>
+          </div>
+
+          <div class="flex bg-white">
+            <div class="w-1/2 p-3 sm:p-4 font-medium">Khối lượng cho phép chở</div>
+            <div class="w-1/2 p-3 sm:p-4 font-medium">130 kg</div>
+          </div>
+
+          <div class="flex bg-white">
+            <div class="w-1/2 p-3 sm:p-4 font-medium">Dung tích cốp xe</div>
+            <div class="w-1/2 p-3 sm:p-4 font-medium">20L</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="spec-section my-5">
+        <div class="spec-header grid grid-cols-3 items-center bg-[#e5e5e5]! p-3 sm:p-4 cursor-pointer">
+          <h2 class="text-base sm:text-lg font-bold text-gray-800 uppercase text-left">ĐỘNG CƠ</h2>
+          <h2 class="text-base sm:text-lg font-bold text-gray-800 uppercase flex-grow text-center">YADEA VOLTGUARD U
+          </h2>
+          <div class="arrow text-xl text-gray-600 cursor-pointer justify-self-end">
+            &darr;
+          </div>
+        </div>
+
+        <div class="spec-content text-sm sm:text-base text-gray-700">
+          <div class="flex bg-white">
+            <div class="w-1/2 p-3 sm:p-4 font-medium">Loại động cơ</div>
+            <div class="w-1/2 p-3 sm:p-4 font-medium">Hub</div>
+          </div>
+
+          <div class="flex bg-white">
+            <div class="w-1/2 p-3 sm:p-4 font-medium">Công suất danh định</div>
+            <div class="w-1/2 p-3 sm:p-4 font-medium">3000W</div>
+          </div>
+
+          <div class="flex bg-white">
+            <div class="w-1/2 p-3 sm:p-4 font-medium">Công suất tối đa</div>
+            <div class="w-1/2 p-3 sm:p-4 font-medium">4250W</div>
+          </div>
+
+          <div class="flex bg-white">
+            <div class="w-1/2 p-3 sm:p-4 font-medium">Tốc độ tối đa</div>
+            <div class="w-1/2 p-3 sm:p-4 font-medium">76km/h</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="spec-section my-5">
+        <div class="spec-header grid grid-cols-3 items-center bg-[#e5e5e5]! p-3 sm:p-4 cursor-pointer">
+          <h2 class="text-base sm:text-lg font-bold text-gray-800 uppercase text-left">ẮC QUY/PIN</h2>
+          <h2 class="text-base sm:text-lg font-bold text-gray-800 uppercase flex-grow text-center">YADEA VOLTGUARD U
+          </h2>
+          <div class="arrow text-xl text-gray-600 cursor-pointer justify-self-end">
+            &darr;
+          </div>
+        </div>
+
+        <div class="spec-content text-sm sm:text-base text-gray-700">
+          <div class="flex bg-white">
+            <div class="w-1/2 p-3 sm:p-4 font-medium">Loại Pin</div>
+            <div class="w-1/2 p-3 sm:p-4 font-medium">Pin LFP</div>
+          </div>
+
+          <div class="flex bg-white">
+            <div class="w-1/2 p-3 sm:p-4 font-medium">Dung lượng pin</div>
+            <div class="w-1/2 p-3 sm:p-4 font-medium">72V50Ah</div>
+          </div>
+
+          <div class="flex bg-white">
+            <div class="w-1/2 p-3 sm:p-4 font-medium">Độ dài quảng đường</div>
+            <div class="w-1/2 p-3 sm:p-4 font-medium">112km (40km/h)</div>
+          </div>
+
+          <div class="flex bg-white">
+            <div class="w-1/2 p-3 sm:p-4 font-medium">Thời gian sạc</div>
+            <div class="w-1/2 p-3 sm:p-4 font-medium">Từ 4-6 tiếng</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="spec-section my-5">
+        <div class="spec-header grid grid-cols-3 items-center bg-[#e5e5e5]! p-3 sm:p-4 cursor-pointer">
+          <h2 class="text-base sm:text-lg font-bold text-gray-800 uppercase text-left">THÔNG SỐ KHÁC</h2>
+          <h2 class="text-base sm:text-lg font-bold text-gray-800 uppercase flex-grow text-center">YADEA VOLTGUARD U
+          </h2>
+          <div class="arrow text-xl text-gray-600 cursor-pointer justify-self-end">
+            &darr;
+          </div>
+        </div>
+
+        <div class="spec-content text-sm sm:text-base text-gray-700">
+          <div class="flex bg-white">
+            <div class="w-1/2 p-3 sm:p-4 font-medium">Loại vành</div>
+            <div class="w-1/2 p-3 sm:p-4 font-medium">MT2.15X14 / MT2.50×14</div>
+          </div>
+
+          <div class="flex bg-white">
+            <div class="w-1/2 p-3 sm:p-4 font-medium">Đường kính vành trước/sau</div>
+            <div class="w-1/2 p-3 sm:p-4 font-medium">14/14 inch</div>
+          </div>
+
+          <div class="flex bg-white">
+            <div class="w-1/2 p-3 sm:p-4 font-medium">Hệ thống phanh</div>
+            <div class="w-1/2 p-3 sm:p-4 font-medium">Phanh đĩa</div>
+          </div>
+
+          <div class="flex bg-white">
+            <div class="w-1/2 p-3 sm:p-4 font-medium">Loại lốp</div>
+            <div class="w-1/2 p-3 sm:p-4 font-medium">Lốp không săm</div>
+          </div>
+
+          <div class="flex bg-white">
+            <div class="w-1/2 p-3 sm:p-4 font-medium">Thông số lốp (trước/sau)</div>
+            <div class="w-1/2 p-3 sm:p-4 font-medium">Trước 90/90-14 Sau 100/90-14</div>
+          </div>
+
+          <div class="flex bg-white">
+            <div class="w-1/2 p-3 sm:p-4 font-medium">Hệ thống đèn</div>
+            <div class="w-1/2 p-3 sm:p-4 font-medium">LED</div>
+          </div>
+
+          <div class="flex bg-white">
+            <div class="w-1/2 p-3 sm:p-4 font-medium">Chế độ lái</div>
+            <div class="w-1/2 p-3 sm:p-4 font-medium">Chế độ TTFAR/SPORT</div>
+          </div>
+
+          <div class="flex bg-white">
+            <div class="w-1/2 p-3 sm:p-4 font-medium">Hệ thống chống trộm</div>
+            <div class="w-1/2 p-3 sm:p-4 font-medium">Hệ thống chống trộm, cảnh báo lăn bánh, tìm xe</div>
+          </div>
+
+          <div class="flex bg-white">
+            <div class="w-1/2 p-3 sm:p-4 font-medium">Hệ thống thông minh</div>
+            <div class="w-1/2 p-3 sm:p-4 font-medium">BMS, GPS, TTFAR, Đồng hồ hiển thị nâng cấp toàn diện</div>
+          </div>
+
+          <div class="flex bg-white">
+            <div class="w-1/2 p-3 sm:p-4 font-medium">Tính năng khác</div>
+            <div class="w-1/2 p-3 sm:p-4 font-medium">Nền tảng AIGO, EasyGo Smart Key, AI AnToàn, Smart ECO</div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-10">
+      <div class="max-w-7xl pb-10">
+        <p class="font-medium text-[18px] text-gray-500">* Độ dài quãng đường đi được và tốc độ tối đa đạt được trong
+          phần giới thiệu này được thử nghiệm trong điều
+          kiện tiêu chuẩn của YADEA, các yếu tố khác có thể làm ảnh hưởng đến quãng đường thực tế, ví dụ như tải trọng,
+          nhiệt độ, tốc độ gió, điều kiện đường và thói quen di chuyển. Đồng thời dung lượng tối đa của ắc quy sẽ bị
+          giảm
+          sau một thời gian sử dụng do đặc tính của nó.
+        </p>
+        <p class="font-medium text-[18px] text-gray-500">* YADEA có quyền thay đổi hoặc sửa đổi bất kỳ thông số kỹ thuật
+          nào mà không cần thông báo trước.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="bg-black text-white p-4">
+    <div class="flex">
+      <div class="w-140 mx-2">
+        <img src="https://www.yadea.com.vn/wp-content/uploads/2023/09/logo-yadea.svg" alt="" />
+        <h1 class="text-[#ff5f00] font-bold">
+          CÔNG TY TNHH ELETRIC MOTORCYCLE YADEA VIỆT NAM
+        </h1>
+        <p>
+          Mã số thuế: 2400866767 do Sở KHĐT Tỉnh Bắc Giang cấp lần đầu ngày
+          27/06/2019 và các lần thay đổi tiếp theo.
+        </p>
+        <p>
+          Địa Chỉ:Lô O1-2, O1-3, O1-5, O1-6, O1-7 Khu công nghiệp Quang Châu,
+          Phường Nếnh, Tỉnh Bắc Ninh, Việt Nam.
+        </p>
+      </div>
+      <div class="flex flex-col w-70">
+        <h1 class="text-[#ff5f00] font-bold">SẢN PHẨM MỚI</h1>
+        <a class="hover:text-[#ff5f00]" href="#">YADEA Vekoo</a>
+        <a class="hover:text-[#ff5f00]" href="#">YADEA Velax</a>
+        <a class="hover:text-[#ff5f00]" href="#">YADEA Oris</a>
+        <a class="hover:text-[#ff5f00]" href="#">YADEA Voltguard</a>
+        <a class="hover:text-[#ff5f00]" href="#">YADEA Ossy</a>
+      </div>
+      <div class="flex flex-col w-70">
+        <h1 class="text-[#ff5f00] font-bold">VỀ CHÚNG TÔI</h1>
+        <a class="hover:text-[#ff5f00]" href="">Về YADEA</a>
+        <a class="hover:text-[#ff5f00]" href="">Cửa hàng</a>
+        <a class="hover:text-[#ff5f00]" href="">Công nghệ</a>
+        <a class="hover:text-[#ff5f00]" href="">Tin tức</a>
+        <a class="hover:text-[#ff5f00]" href="">Tuyển dụng</a>
+      </div>
+      <div class="flex flex-col w-70">
+        <h1 class="text-[#ff5f00] font-bold">HỖ TRỢ</h1>
+        <a class="hover:text-[#ff5f00]" href="">Hỗ Trợ & Bảo Hành</a>
+        <a class="hover:text-[#ff5f00]" href="">Phương Thức Thanh Toán</a>
+        <a class="hover:text-[#ff5f00]" href="">Phướng Thức Vận Chuyển</a>
+        <a class="hover:text-[#ff5f00]" href="">Chính Sách Đổi Trả</a>
+        <a class="hover:text-[#ff5f00]" href="">Chính sách Bảo Mật</a>
+        <a class="hover:text-[#ff5f00]" href="">Cơ hội Hợp Tác</a>
+        <a class="hover:text-[#ff5f00]" href="">Liên Hệ</a>
+      </div>
+      <div>
+        <h1 class="text-[#ff5f00] font-bold">THEO DÕI YADEA</h1>
+        <div class="flex space-x-2">
+          <a class="hover:text-[#ff5f00]" href="https://www.facebook.com/yadeabrand/">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-facebook-icon lucide-facebook">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+            </svg>
+          </a>
+          <a class="hover:text-[#ff5f00]" href="https://www.instagram.com/yadea.vietnam/">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-instagram-icon lucide-instagram">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+              <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+            </svg>
+          </a>
+          <a class="hover:text-[#ff5f00]" href="https://www.youtube.com/channel/UCwNqzgb1QFon3ZP2jbI71Tg">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-youtube-icon lucide-youtube">
+              <path
+                d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17" />
+              <path d="m10 15 5-3-5-3z" />
+            </svg>
+          </a>
+        </div>
+        <h1>THÔNG TIN LIÊN HỆ</h1>
+        <p>CSKH: 1900636803</p>
+        <p>Liên Hệ Hợp Tác: (+84) 204 6299 288</p>
+        <p>Email: market@yadea.com.vn</p>
+        <img src="" alt="" />
+      </div>
+    </div>
+    <p class="text-gray-400">
+      © 2025 – Bản quyền thuộc về Công ty TNHH Electric Motorcycle Yadea Việt
+      Nam.
+    </p>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./jscript.js"></script>
+</body>
+
+
+
+
+</html>
